@@ -1,0 +1,20 @@
+/*
+  Custom CSS for your JAM app.
+*/
+.big {
+  font-family: 'Kolker Brush', cursive;
+  font-size: xx-large; 
+  font-weight: 777;
+}
+
+.small {
+  font-family: 'Kolker Brush';
+  font-weight: lighter;
+  font-size: xxx-large;
+}
+
+.x {
+  font-family: 'Kolker Brush', cursive;
+  font-size: xxx-large; 
+  font-weight: 888;
+}
