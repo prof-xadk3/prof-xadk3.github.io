@@ -13,6 +13,10 @@ const loadGHcontent = () => {
   fetch("https://cdn.jsdelivr.net/gh/c4p-n1ck/c4p-n1ck@main/README.md").then(r => { r.text().then(resp => { $('#ghmdc').innerHTML = mdc.makeHtml(resp); }) })
 }
 
+aboutX4dk3 = `
+
+`;
+
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
   console.log("Application loaded successfully.");
