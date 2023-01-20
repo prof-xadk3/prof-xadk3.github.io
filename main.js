@@ -20,8 +20,6 @@ Since its a literal hell, scroll/tap/interact to see more of it. #peace
 <iframe src="https://threatmap.fortiguard.com/" /></iframe>
 <iframe src="https://threatmap.checkpoint.com/" /></iframe>
 <hr />
-<iframe src="https://livethreatmap.radware.com/" width="100%" /></iframe>
-<hr />
 <iframe src="https://threatmap.bitdefender.com/" width="100%" /></iframe>
 <hr />
 <iframe src="https://www.digitalattackmap.com/#anim=1&color=0&country=ALL&list=0&time=18763&view=map" width="100%"/></iframe>
