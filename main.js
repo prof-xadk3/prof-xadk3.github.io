@@ -26,6 +26,20 @@ Since its a literal hell, scroll/tap/interact to see more of it. #peace
 <iframe src="https://attackmap.sonicwall.com/live-attack-map/" /></iframe>
 <hr />
 <iframe src="https://www.digitalattackmap.com/#anim=1&color=0&country=ALL&list=0&time=18763&view=map" width="100%"/></iframe>
+<hr />
+<i>If you wish to see them in fullscreen, copy-paste on your URL-bar yourself. =)</i>
+<br />
+<pre style="background: #000; color: #0F0">
+ - https://threatmap.fortiguard.com
+ - https://threatmap.checkpoint.com
+ - https://threatmap.bitdefender.com
+ - https://map.httpcs.com
+ - https://attackmap.sonicwall.com/live-attack-map
+ - https://www.digitalattackmap.com
+ - https://cybermap.kaspersky.com
+ - https://www.fireeye.com/cyber-map/threat-map.html
+ - https://livethreatmap.radware.com
+</pre>
 `;
 }
 
