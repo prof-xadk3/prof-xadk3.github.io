@@ -6,6 +6,7 @@ const switchTheme = () => {
     $('#theme').href = curr_theme.split('.').slice(0, 5).join('.') + '.dark.min.css';
   }
 }
+// _tzGbiXSy2g
 
 const mdc = new showdown.Converter({ tables: true, tablesHeaderId: true });
 
@@ -74,4 +75,5 @@ aboutX4dk3 = `
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
   console.log("Application loaded successfully.");
+  document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
 });
