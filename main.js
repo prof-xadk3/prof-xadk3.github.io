@@ -11,7 +11,7 @@ const switchTheme = () => {
 const mdc = new showdown.Converter({ tables: true, tablesHeaderId: true });
 
 const loadGHcontent = () => {
-  fetch("https://cdn.jsdelivr.net/gh/c4p-n1ck/c4p-n1ck@main/README.md").then(r => { r.text().then(resp => { $('#ghmdc').innerHTML = mdc.makeHtml(resp); }) })
+  fetch("https://cdn.jsdelivr.net/gh/c4p-n1ck/c4p-n1ck/README.md").then(r => { r.text().then(resp => { $('#ghmdc').innerHTML = mdc.makeHtml(resp); }) })
 }
 
 launchDigiThreatPortal = () => {
