@@ -7,6 +7,10 @@
   font-weight: 777;
 }
 
+.card {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
 .small {
   font-family: 'Kolker Brush';
   font-weight: lighter;
