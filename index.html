@@ -189,6 +189,26 @@
     </a>
   </div>
   </div>
+  <div id="follow"></div>
+
+  <style>
+    #follow {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #000;
+      border-radius: 10px;
+    }
+  </style>
+
+  <script>
+    const follow = document.getElementById("follow");
+
+    document.addEventListener("mousemove", (event) => {
+      follow.style.left = `${event.clientX - 3.14}px`;
+      follow.style.top = `${event.clientY - 3.14}px`;
+    });
+  </script>
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
   <!--<script src="/modules/rss-parser.min.js"></script>-->
   <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
