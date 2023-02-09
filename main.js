@@ -69,11 +69,20 @@ const switchServiceZ = () => {
 */
 
 aboutX4dk3 = `
-
+  God knows it. oh god -- phiww.
 `;
+
+const loadDic = () => {
+  fetch('https://api.primexbt.com/v2/dictionary').then(r => {
+    r.text().then(rtext => {
+      $('#dic').innerText = rtext;
+    })
+  })
+}
 
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
   console.log("Application loaded successfully.");
-  document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
+  loadDic();
+  // document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
 });
