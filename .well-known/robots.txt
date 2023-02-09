@@ -3,4 +3,4 @@
 # meh.
 # -----
 User-Agent: You, dear.
-Allow: /
+Allow: *
