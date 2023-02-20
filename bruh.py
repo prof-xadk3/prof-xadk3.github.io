@@ -1,7 +1,7 @@
 from amzqr import amzqr
 
 version, level, qr_name = amzqr.run(
-    words,
+    "jack-u",
     version=1,
     level="H",
     picture=None,
@@ -9,5 +9,5 @@ version, level, qr_name = amzqr.run(
     contrast=1.0,
     brightness=1.0,
     save_name=None,
-    save_dir=os.getcwd(),
+    save_dir=__import__("os").getcwd(),
 )
