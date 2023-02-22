@@ -72,6 +72,7 @@ aboutX4dk3 = `
   God knows it. oh god -- phiww.
 `;
 
+/*
 const loadDic = () => {
   fetch('https://api.primexbt.com/v2/dictionary').then(r => {
     r.text().then(rtext => {
@@ -79,10 +80,30 @@ const loadDic = () => {
     })
   })
 }
+*/
+
+const isTori = () => {
+  fetch('https://cdn.jsdelivr.net/gh/SecOps-Institute/Tor-IP-Addresses/tor-exit-nodes.lst').then(r => {
+    r.text().then(ipv4list => {
+      const tories = ipv4list.split(`\n`);
+      console.log(`Loaded ${tories} ..`);
+      fetch('https://httpbin.org/ip').then(urIPvIDK => {
+        urIPvIDK.json().then(o => {
+          console.log(`[!] Checking if ur one of "tories" lolz.`);
+          if (o.origin in tories) {
+            // FUCK right off here.
+            window.location = "https://www.google.com/";
+          }
+        })
+      })
+    })
+  })
+}
 
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
   console.log("Application loaded successfully.");
-  loadDic();
+  isTori();
+  // loadDic();
   // document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
 });
