@@ -1,6 +1,2 @@
-# Do whatever.
-# ~
-# meh.
-# -----
-User-Agent: You, dear.
-Allow: *
+User-Agent: *
+Allow: /
