@@ -22,3 +22,10 @@
   font-size: xxx-large; 
   font-weight: 888;
 }
+
+:root {
+  --pay-with-ln-color: #40a9ff;
+  --pay-with-ln-active-color: #ffdd57;
+  --pay-with-ln-text-color: white;
+  --pay-with-ln-ative-text-color: red;
+}
