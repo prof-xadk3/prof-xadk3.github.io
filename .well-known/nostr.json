@@ -4,7 +4,8 @@
     "xadkekopc": "0a4bc33dbb4b63980b586b6d7e76f4d28cfaf2b7c39829df2da789aa2d71efb2",
     "x": "20dd4114d2517afdface5a7bf516998d0709a4b1ab0b6777e21ee61f087aa7a0",
     "nick": "7c2fa10b823308480cd5b04545dcf87d10cfa277afe1ede1c257bd03f1f9712a",
-    "prof_xadke": "0fa734d0fa0d29ce6a9f1f35e34decd8d68d1f726c8d5dbb63dfcb2d542fca39"
+    "prof_xadke": "0fa734d0fa0d29ce6a9f1f35e34decd8d68d1f726c8d5dbb63dfcb2d542fca39",
+    "wth": "npub1065a4z5d5kewg49e6fjxur5u04kh7tdnfqf6hnlfhsg8tkfw89ls3ak5p8" // check hehe.
   }
     "relays": {
     "wss://threatmap.fortiguard.com/ws",
