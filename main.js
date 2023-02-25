@@ -8,7 +8,7 @@ const switchTheme = () => {
 }
 // _tzGbiXSy2g
 
-const mdc = new showdown.Converter({ tables: true, tablesHeaderId: true });
+// const mdc = new showdown.Converter({ tables: true, tablesHeaderId: true });
 
 const loadGHcontent = () => {
   fetch("https://cdn.jsdelivr.net/gh/c4p-n1ck/c4p-n1ck@HEAD/README.md").then(r => { r.text().then(resp => { $('#ghmdc').innerHTML = mdc.makeHtml(resp); }) })
