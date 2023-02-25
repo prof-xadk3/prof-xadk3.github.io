@@ -1,0 +1,50 @@
+/// <reference types="node" />
+import EventEmitter from 'events';
+import { CloseChannelArgs, CreateChainAddressArgs, CreateInvoiceArgs, DiffieHellmanComputeSecretArgs, GetChannelsArgs, GetForwardsArgs, GetInvoicesArgs, GetPaymentsArgs, GrantAccessArgs, OpenChannelArgs, PayArgs, PayViaPaymentDetailsArgs, SendToChainAddressArgs, UpdateRoutingFeesArgs, VerifyBackupsArgs } from 'lightning';
+import { AccountsService } from '../accounts/accounts.service';
+import { LndService } from './lnd/lnd.service';
+export declare class NodeService {
+    private accountsService;
+    private lndService;
+    constructor(accountsService: AccountsService, lndService: LndService);
+    getWalletInfo(id: string): Promise<import("lightning").GetWalletInfoResult>;
+    getWalletVersion(id: string): Promise<import("lightning").GetWalletVersionResult>;
+    getHeight(id: string): Promise<import("lightning").GetHeightResult>;
+    getClosedChannels(id: string): Promise<import("lightning").GetClosedChannelsResult>;
+    getPendingChannels(id: string): Promise<import("lightning").GetPendingChannelsResult>;
+    getChannels(id: string, options?: Omit<GetChannelsArgs, 'lnd'>): Promise<import("lightning").GetChannelsResult>;
+    getChannelBalance(id: string): Promise<import("lightning").GetChannelBalanceResult>;
+    getChainBalance(id: string): Promise<import("lightning").GetChainBalanceResult>;
+    getPendingChainBalance(id: string): Promise<import("lightning").GetPendingChainBalanceResult>;
+    getNode(id: string, pubkey: string, withoutChannels: boolean): Promise<import("lightning").GetNodeResult>;
+    verifyBackup(id: string, backup: string): Promise<{
+        is_valid: boolean;
+    }>;
+    verifyBackups(id: string, args: Omit<VerifyBackupsArgs, 'lnd'>): Promise<import("lightning").VerifyBackupsResult>;
+    recoverFundsFromChannels(id: string, backup: string): Promise<void>;
+    getBackups(id: string): Promise<import("lightning").GetBackupsResult>;
+    verifyMessage(id: string, message: string, signature: string): Promise<import("lightning").VerifyMessageResult>;
+    signMessage(id: string, message: string): Promise<import("lightning").SignMessageResult>;
+    grantAccess(id: string, permissions: Omit<GrantAccessArgs, 'lnd'>): Promise<import("lightning").GrantAccessResult>;
+    getNetworkInfo(id: string): Promise<import("lightning").GetNetworkInfoResult>;
+    getPeers(id: string): Promise<import("lightning").GetPeersResult>;
+    addPeer(id: string, public_key: string, socket: string, is_temporary: boolean): Promise<void>;
+    removePeer(id: string, public_key: string): Promise<void>;
+    getChainTransactions(id: string): Promise<import("lightning").GetChainTransactionsResult>;
+    getUtxos(id: string): Promise<import("lightning").GetUtxosResult>;
+    createChainAddress(id: string, is_unused?: boolean, format?: CreateChainAddressArgs['format']): Promise<import("lightning").CreateChainAddressResult>;
+    sendToChainAddress(id: string, options: Omit<SendToChainAddressArgs, 'lnd'>): Promise<import("lightning").SendToChainAddressResult>;
+    diffieHellmanComputeSecret(id: string, options: Omit<DiffieHellmanComputeSecretArgs, 'lnd'>): Promise<import("lightning").DiffieHellmanComputeSecretResult>;
+    decodePaymentRequest(id: string, request: string): Promise<import("lightning").DecodePaymentRequestResult>;
+    pay(id: string, options: Omit<PayArgs, 'lnd'>): Promise<import("lightning").PayResult>;
+    createInvoice(id: string, options: Omit<CreateInvoiceArgs, 'lnd'>): Promise<import("lightning").CreateInvoiceResult>;
+    getChannel(id: string, channel_id: string): Promise<import("lightning").GetChannelResult>;
+    closeChannel(id: string, options: Omit<CloseChannelArgs, 'lnd'>): Promise<import("lightning").CloseChannelResult>;
+    openChannel(id: string, options: Omit<OpenChannelArgs, 'lnd'>): Promise<import("lightning").OpenChannelResult>;
+    updateRoutingFees(id: string, options: Omit<UpdateRoutingFeesArgs, 'lnd'>): Promise<import("lightning").UpdateRoutingFeesResult>;
+    getForwards(id: string, options: Omit<GetForwardsArgs, 'lnd'>): Promise<import("lightning").GetForwardsResult>;
+    getPayments(id: string, options: Omit<GetPaymentsArgs, 'lnd'>): Promise<import("lightning").GetPaymentsResult>;
+    getInvoices(id: string, options: Omit<GetInvoicesArgs, 'lnd'>): Promise<import("lightning").GetInvoicesResult>;
+    payViaPaymentDetails(id: string, options: Omit<PayViaPaymentDetailsArgs, 'lnd' | 'routes'>): Promise<import("lightning").PayViaPaymentDetailsResult>;
+    subscribeToInvoice(id: string, invoice: string): EventEmitter;
+}
