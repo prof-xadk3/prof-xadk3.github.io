@@ -2,9 +2,9 @@ export type ContextType = {
     req: any;
     res: any;
     authToken?: JwtObjectType;
-    lnMarketsAuth: string | null;
-    tokenAuth: string | null;
-    ambossAuth: string | null;
+    cpRaTrustAuth: string | null;
+    urIDAuth: string | null;
+    pubAuth: string | null;
 };
 export type JwtObjectType = {
     iat: number;

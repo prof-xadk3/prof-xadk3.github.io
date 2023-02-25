@@ -7,7 +7,7 @@ async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.useLogger(app.get(nest_winston_1.WINSTON_MODULE_NEST_PROVIDER));
     app.setGlobalPrefix(process.env.BASE_PATH || '');
-    await app.listen(process.env.PORT || 3000, process.env.HOST);
+    await app.listen(process.env.PORT || 55555, process.env.HOST);
     console.log(`Application is running on: ${await app.getUrl()}`);
 }
 bootstrap();
