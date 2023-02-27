@@ -13,6 +13,7 @@
   <link id="theme" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css" rel="stylesheet" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="https://prof-xadk3.github.io/qr.png" />
+  <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
 </head>
 
@@ -192,7 +193,6 @@
               <div id="services">We serve for the world being shapeless, formless, timeless ~ we're born to serve!
                 <hr />
                 <i>Not some random joke; click to see through it. =)</i>
-                <hr />
                 <a class="twitter-timeline"
                   href="https://twitter.com/naryal2580/lists/1612526220671070210?ref_src=twsrc%5Etfw">A Twitter List by
                   naryal2580</a>
@@ -202,6 +202,17 @@
             <div class="tab-pane fade" id="ex-with-icons-tabs-8" role="tabpanel" aria-labelledby="ex-with-icons-tab-8">
               <div id="contacts">They prefer to stay AWAY than getting in contact in any
                 electro-magnetic-mean/leave-a-trace.</div>
+              <hr />
+              <input type="file" class="filepond">
+
+              <!-- Load FilePond library -->
+              <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+              <!-- Turn all file input elements into ponds -->
+              <script>
+                FilePond.parse(document.body);
+              </script>
+              <h1> Now, fork the upload btn. thyself. </h1> =)
             </div>
             <div class="tab-pane fade" id="ex-with-icons-tabs-9" role="tabpanel" aria-labelledby="ex-with-icons-tab-9">
               <div id="options">Do we have one? It's simply an [/¡\]llusion of choice ~ Do you have one though?</div>
