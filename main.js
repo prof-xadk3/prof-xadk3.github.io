@@ -93,6 +93,8 @@ const isTori = () => {
           if (o.origin in tories) {
             // FUCK right off here.
             window.location = "https://www.google.com/";
+          } else {
+            console.clear();
           }
         })
       })
@@ -102,8 +104,9 @@ const isTori = () => {
 
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
-  console.log("Application loaded successfully.");
   isTori();
+  console.clear();
+  console.log("[!] Application loaded successfully.");
   // loadDic();
   // document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
 });
