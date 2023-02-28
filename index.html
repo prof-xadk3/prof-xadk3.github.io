@@ -14,6 +14,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="https://prof-xadk3.github.io/qr.png" />
   <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+  <script src="https://nostri.chat/public/bundle.js" <!-- YOUR PUBKEY IN HEX FORMAT -->
+    data - website - owner - pubkey="npub1pf9ux0dmfd3esz6cddkhuah562x04u4hcwvznhed57y65tt3a7eqx9mp64"
+      < !--THE TYPE OF CHAT YOU WANT: GLOBAL or DMs-- >
+        data - chat - type="GLOBAL"
+          < !--If you use GLOBAL you can choose set a comma - separated list of hashtags-- >
+            data - chat - tags="#nostrica,#bitcoin"
+              < !--Relays you'd like to use -->
+    data - relays="wss://relay.f7z.io,wss://nos.lol,wss://relay.nostr.info,wss://nostr-pub.wellorder.net,wss://relay.current.fyi,wss://relay.nostr.band"
+      ></script>
+  <link rel="stylesheet" href="https://nostri.chat/public/bundle.css">
   <link href="./style.css" rel="stylesheet">
 </head>
 
@@ -216,7 +226,7 @@
 
               <!-- Turn all file input elements into ponds -->
               <script>
-                FilePond.parse(document.body);
+                  FilePond.parse(document.body);
               </script>
               <h1> Now, fork the upload btn. thyself. </h1> =)
             </div>
