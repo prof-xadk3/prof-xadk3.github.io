@@ -83,12 +83,14 @@ const loadDic = () => {
 */
 
 
-const whoiZappa = (chabi = "") => {
-  if (!chabi) {
-    xb = prompt("Please enter the Key here.")
-    window.location = `https://nostr.guru/${xb}`;
+const whoiZappa = (_pubkey = "") => {
+  if (!_pubkey) {
+    if (document.querySelector('#x').value.endsWith('64')) {
+      _xD = prompt("Please enter the Key here.");
+    }
+    window.location = `https://nostr.guru/${_xD}`;
   }
-  window.location = `https://nostr.guru/${chabi}`;
+  window.location = `https://nostr.guru/${_pubkey}`;
 }
 
 const isTori = () => {
