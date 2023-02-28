@@ -82,6 +82,15 @@ const loadDic = () => {
 }
 */
 
+
+const whoiZappa = (chabi = "") => {
+  if (!chabi) {
+    xb = prompt("Please enter the Key here.")
+    window.location = `https://nostr.guru/${xb}`;
+  }
+  window.location = `https://nostr.guru/${chabi}`;
+}
+
 const isTori = () => {
   fetch('https://cdn.jsdelivr.net/gh/SecOps-Institute/Tor-IP-Addresses/tor-exit-nodes.lst').then(r => {
     r.text().then(ipv4list => {
