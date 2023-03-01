@@ -120,6 +120,11 @@ const isThisNickqWss = () => {
     socket.on('event', function(data) {
       console.log(data);
     });
+    socket.io.on("connection", (socket) => {
+      socket.on("PING", (args, callback) => {
+        callback("Pura Vida!"); // only one argument is expected
+      });
+    });
     socket.on("data", (...args) => {
       socket.volatile.emit("message", args);
     });
