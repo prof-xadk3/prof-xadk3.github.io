@@ -114,6 +114,21 @@ const isTori = () => {
   })
 }
 
+/*
+// leave for now.
+const isThisNickqWss = () => {
+  var socket = io('ws://localhost:2580');
+  socket.on('connect', function() {
+    socket.on('event', function(data) {
+      console.log(data);
+    });
+    socket.on('disconnect', function() {
+      console.log('Conn. ~ lost.')
+    });
+  });
+}
+*/
+
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
   isTori();
