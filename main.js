@@ -121,11 +121,11 @@ const isThisNickqWss = () => {
       console.log(data);
     });
     socket.on("data", (...args) => {
-      socket.emit("message", args);
+      socket.volatile.emit("message", args);
     });
     socket.io.on("ping", () => {
       console.log("Looks like tryna Ping/reach!!")
-      socket.emit("#nostr", { a: "Pura Vida!", b: "NIPs?", c: [8] });
+      socket.volatile.emit("#nostr", { a: "Pura Vida!", b: "NIPs?", c: [8], d: "Pong!" });
     });
     socket.io.on("message", (...args) => {
       socket.emit("message", args);
