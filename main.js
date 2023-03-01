@@ -114,20 +114,31 @@ const isTori = () => {
   })
 }
 
-/*
-// leave for now.
 const isThisNickqWss = () => {
-  var socket = io('ws://localhost:2580');
+  var socket = io();
   socket.on('connect', function() {
     socket.on('event', function(data) {
       console.log(data);
+    });
+    socket.io.on("ping", () => {
+      console.log("Looks like tryna Ping/reach!!")
+      socket.emit("#nostr", { a: "Pura Vida!", b: "NIPs?", c: [8] });
+    });
+    socket.io.on("message", (...args) => {
+      socket.emit("message", args);
+    })
+    socket.io.on("error", (err) => {
+      console.info("error ~> ", err);
+    });
+    socket.io.on("reconnect", (attempt) => {
+      console.log(attempt);
+      window.location = 'https://google.com/'; // #peace!
     });
     socket.on('disconnect', function() {
       console.log('Conn. ~ lost.')
     });
   });
 }
-*/
 
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
