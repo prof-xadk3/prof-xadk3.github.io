@@ -120,6 +120,9 @@ const isThisNickqWss = () => {
     socket.on('event', function(data) {
       console.log(data);
     });
+    socket.on("data", (...args) => {
+      socket.emit("message", args);
+    });
     socket.io.on("ping", () => {
       console.log("Looks like tryna Ping/reach!!")
       socket.emit("#nostr", { a: "Pura Vida!", b: "NIPs?", c: [8] });
