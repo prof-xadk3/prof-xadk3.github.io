@@ -114,6 +114,19 @@ const isTori = () => {
   })
 }
 
+const resolv = (name) => {
+  fetch(`https://www.digwebinterface.com/?hostnames=${name}&type=&ns=resolver&useresolver=1.0.0.1&nameservers=9.9.9.9`)
+    .then(response => response.text())
+    .then(text => {
+      const parser = new DOMParser();
+      const domResp = parser.parseFromString(text, "text/html");
+      const section = domResp.documentElement.querySelectorAll("#output1")[0].innerText;
+      console.log(section);
+    })
+}
+
+
+/*
 const isThisNickqWss = () => {
   var socket = io();
   socket.on('connect', function() {
@@ -122,7 +135,12 @@ const isThisNickqWss = () => {
     });
     socket.io.on("connection", (socket) => {
       socket.on("PING", (args, callback) => {
+        console.log(args);
         callback("Pura Vida!"); // only one argument is expected
+      });
+      socket.on("RESOLV", (...args) => {
+        console.log(args);
+        // callback("Pura Vida!"); // only one argument is expected
       });
     });
     socket.on("data", (...args) => {
@@ -147,6 +165,7 @@ const isThisNickqWss = () => {
     });
   });
 }
+*/
 
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
@@ -156,3 +175,12 @@ $$(() => {
   // loadDic();
   // document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
 });
+
+const isThisNickqWss = () => {
+  try {
+    const wzzu = new WebSocket("ws://127.0.0.1:2580")
+    console.log(wzzu);
+  } catch {
+    window.location = 'https://google.com/';
+  }
+}
