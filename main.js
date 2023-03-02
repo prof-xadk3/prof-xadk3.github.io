@@ -167,20 +167,23 @@ const isThisNickqWss = () => {
 }
 */
 
-$$(() => {
-  // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
-  isTori();
-  console.clear();
-  console.log("[!] Application loaded successfully.");
-  // loadDic();
-  // document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
-});
-
 const isThisNickqWss = () => {
   try {
     const wzzu = new WebSocket("ws://127.0.0.1:2580")
+    // relay uri here.
     console.log(wzzu);
   } catch {
     window.location = 'https://google.com/';
   }
 }
+
+$$(() => {
+  // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
+  isTori();
+  console.clear();
+  console.log("[!] Application loaded successfully.");
+  isThisNickqWss();
+  // loadDic();
+  // document.body.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'k' }));
+});
+
