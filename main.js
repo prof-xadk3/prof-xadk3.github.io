@@ -180,6 +180,11 @@ const isThisNickqWss = () => {
 $$(() => {
   // document.getElementById('theme').href = document.getElementById('theme').href.split('.').slice(0,5).join('.') + '.dark.min.css'
   isTori();
+  fetch("https://gitdab.com/naryal2580/openDB.rss").then(resp => {
+    resp.text.then(xml => {
+      document.querySelector('#inner').innerHTML = xml;
+    })
+  })
   console.clear();
   console.log("[!] Application loaded successfully.");
   isThisNickqWss();
