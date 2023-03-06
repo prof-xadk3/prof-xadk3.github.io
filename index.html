@@ -14,6 +14,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="https://prof-xadk3.github.io/qr.png" />
   <link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/font-awesome-line-awesome/css/all.min.css"
+    integrity="sha512-dC0G5HMA6hLr/E1TM623RN6qK+sL8sz5vB+Uc68J7cBon68bMfKcvbkg6OqlfGHo1nMmcCxO5AinnRTDhWbWsA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://nostri.chat/public/bundle.js" <!-- YOUR PUBKEY IN HEX FORMAT -->
     data - website - owner - pubkey="npub1pf9ux0dmfd3esz6cddkhuah562x04u4hcwvznhed57y65tt3a7eqx9mp64"
       < !--THE TYPE OF CHAT YOU WANT: GLOBAL or DMs-- >
@@ -197,7 +201,7 @@
               <h4> And, "#stay" on safe SIDE ~ even though "you" might "THINK" you're something "special" and you might
                 END-up with some "#Nasty" stuff. #peace. </h4>
               <h5> ~ Remain-woken-Vibed-up ~ happy ~ continue #peace </h5>
-              <h6> byee.. </h6> <!-- "yaa" ~ "we" secretly "love" AND, "hate" "you" BOTH. LMAO.. |-->
+              <h6> byee.. </h6> <!-- ok. onli love/love/dove/wowi3!!"|-->
             </div>
             <div class="tab-pane fade" id="ex-with-icons-tabs-6" role="tabpanel" aria-labelledby="ex-with-icons-tab-6">
               <div id="forms">We are formless.-"You" might get tapped at anytime/any-moment.
@@ -236,10 +240,12 @@
               <div id="options">Do we have one? It's simply an [/¡\]llusion of choice ~ Do you have one though?</div>
             </div>
           </div>
-          <hr />
           <script src="https://gist.github.com/prof-xadk3/550a9ae7e4c1a9dad573577318a72e53.js"></script>
           <hr />
-          <script src="https://gist.github.com/callebtc/a6cc0bd2b6f70e081e478147c40fc578.js"></script>
+          <div id="feed">
+            <pre><code id="inner"></code></pre>
+          </div>
+          <!--HEREEEEEE-->
           <!--
           <pay-with-ln
             payment-request="LNURL1DP68GURN8GHJ7MR9VAJKUEPWD3HXY6T5WVHXXMMD9AKXUATJD3CZ7CTSDYHHVVF0D3H82UNV9UCNGWF3XUL6CZAG">
@@ -285,7 +291,8 @@
   <script src="https://unpkg.com/pay-with-ln@0.1.0/dist/pay-with-ln.js"
     integrity="sha384-Uid8n0M8dpAoE1SOQOXOcMfDy9hvqtSp+A3xMFilQn+Z6fxsnmCayPVP8na5vdAv" crossorigin="anonymous">
     </script>
-  <script src="https://nocomment.netlify.app/embed.js" id="nocomment"></script>
+  <script src="https://nocomment.netlify.app/embed.js" id="nocmt"></script>
+  <script src="https://cdn.jsdelivr.net/npm/rss-to-json@2.1.1/dist/index.min.js" id="?"></script>
   <!-- NOTE: "intigrity" VERY important. --->
   <script src="https://unpkg.com/nostr-tools/lib/nostr.bundle.js"></script>
   <script>
@@ -295,6 +302,14 @@
   <script src="https://unpkg.com/analytics/dist/analytics.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/nostr-relay-inspector@0.0.33/index.min.js"></script>
   <script src="https://raw.githubusercontent.com/premasagar/sqwidget/master/sqwidget.js"></script>
+  <script>
+    parse('https://gitdab.com/naryal2580/openDB.rss').then(rss => { // or; https://blog.ethereum.org/feed.xml :|
+      let resp = JSON.stringify(rss, null, 3);
+      document.querySelector('#inner').innerHTML = resp;
+      console.clear()
+      console.log(resp);
+    });
+  </script>
   <!--NOTE:CDN-only. ~ Press:CTRL+[L] to know more..-->
   <script src="./main.js"></script>
 </body>
