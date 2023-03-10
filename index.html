@@ -29,245 +29,253 @@
       ></script>
   <link rel="stylesheet" href="https://nostri.chat/public/bundle.css">
   <link href="./style.css" rel="stylesheet">
+  <style>
+    .stop-scrolling {
+      height: 100%;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 <body>
-
   <div id="follow"></div>
-  <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_1TTutbw3H0" title="YouTube - video player."
-      frameborder="0"
+  <div style="position: fixed; z-index: -99; width: 100%; height: 100%"><iframe width="100%" height="100%"
+      src="https://www.youtube.com/embed/_1TTutbw3H0" title="YouTube - video player." frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
-  </div>
-
+      allowfullscreen></iframe></div>
   <center>
-    <div class="container" id="app">
-      <br><br><br><br>
+    <div class="container" id="app"><br><br><br><br>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title"><u><span class="big">Prof</u>. <span class="x"><u>X</u></span></span><span
-              class="small"><u>adke</u>.</span>
-          </h5>
+              class="small"><u>adke</u>.</span></h5>
           <!-- Tabs navs -->
           <ul class="nav nav-tabs mb-3" id="ex-with-icons" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="ex-with-icons-tab-1" data-mdb-toggle="tab" href="#ex-with-icons-tabs-1"
-                role="tab" aria-controls="ex-with-icons-tabs-1" aria-selected="true"><i
-                  class="fas fa-address-card fa-fw me-2"></i>About</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a onclick="loadGHcontent()" class="nav-link" id="ex-with-icons-tab-2" data-mdb-toggle="tab"
-                href="#ex-with-icons-tabs-2" role="tab" aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i
+            <li class="nav-item" role="presentation"><a class="nav-link active" id="ex-with-icons-tab-1"
+                data-mdb-toggle="tab" href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1"
+                aria-selected="true"><i class="fas fa-address-card fa-fw me-2"></i>About</a></li>
+            <li class="nav-item" role="presentation"><a onclick="loadGHcontent()" class="nav-link"
+                id="ex-with-icons-tab-2" data-mdb-toggle="tab" href="#ex-with-icons-tabs-2" role="tab"
+                aria-controls="ex-with-icons-tabs-2" aria-selected="false"><i
                   class="fab fa-github-alt fa-fw me-2"></i>GitHub's Page</a>
             </li>
-            <li class="nav-item" role="presentation">
-              <a onclick="window.open('https://cnik.hashnode.dev/')" class="nav-link" id="ex-with-icons-tab-3"
-                data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab" aria-controls="ex-with-icons-tabs-3"
-                aria-selected="false"><i class="fas fa-blog fa-fw me-2"></i>Blog</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex-with-icons-tab-4" data-mdb-toggle="tab" href="#ex-with-icons-tabs-4" role="tab"
-                aria-controls="ex-with-icons-tabs-4" aria-selected="false"><i
-                  class="fas fa-project-diagram fa-fw me-2"></i>Projects</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex-with-icons-tab-5" data-mdb-toggle="tab" href="#ex-with-icons-tabs-5" role="tab"
-                aria-controls="ex-with-icons-tabs-5" aria-selected="false"><i
-                  class="fas fa-tachometer-alt fa-fw me-2"></i>Experience</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex-with-icons-tab-6" data-mdb-toggle="tab" href="#ex-with-icons-tabs-6" role="tab"
-                aria-controls="ex-with-icons-tabs-6" aria-selected="false"><i
-                  class="fab fa-connectdevelop fa-fw me-2"></i>Get in touch</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex-with-icons-tab-7" data-mdb-toggle="tab" href="#ex-with-icons-tabs-7" role="tab"
-                aria-controls="ex-with-icons-tabs-7" aria-selected="false"><i
-                  class="fas fa-sitemap fa-fw me-2"></i>Services</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex-with-icons-tab-8" data-mdb-toggle="tab" href="#ex-with-icons-tabs-8" role="tab"
-                aria-controls="ex-with-icons-tabs-8" aria-selected="false"><i
-                  class="fas fa-phone-square-alt fa-fw me-2"></i>Contacts</a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="ex-with-icons-tab-9" data-mdb-toggle="tab" href="#ex-with-icons-tabs-9" role="tab"
-                aria-controls="ex-with-icons-tabs-9" aria-selected="false"><i
-                  class="fas fa-ellipsis-v fa-fw me-2"></i>...
-              </a>
-            </li>
+            <li class="nav-item" role="presentation"><a onclick="window.open('https://cnik.hashnode.dev/')"
+                class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
+                aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i
+                  class="fas fa-blog fa-fw me-2"></i>Blog</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-4" data-mdb-toggle="tab"
+                href="#ex-with-icons-tabs-4" role="tab" aria-controls="ex-with-icons-tabs-4" aria-selected="false"><i
+                  class="fas fa-project-diagram fa-fw me-2"></i>Projects</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-5" data-mdb-toggle="tab"
+                href="#ex-with-icons-tabs-5" role="tab" aria-controls="ex-with-icons-tabs-5" aria-selected="false"><i
+                  class="fas fa-tachometer-alt fa-fw me-2"></i>Experience</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-6" data-mdb-toggle="tab"
+                href="#ex-with-icons-tabs-6" role="tab" aria-controls="ex-with-icons-tabs-6" aria-selected="false"><i
+                  class="fab fa-connectdevelop fa-fw me-2"></i>Get in touch</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-7" data-mdb-toggle="tab"
+                href="#ex-with-icons-tabs-7" role="tab" aria-controls="ex-with-icons-tabs-7" aria-selected="false"><i
+                  class="fas fa-sitemap fa-fw me-2"></i>Services</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-8" data-mdb-toggle="tab"
+                href="#ex-with-icons-tabs-8" role="tab" aria-controls="ex-with-icons-tabs-8" aria-selected="false"><i
+                  class="fas fa-phone-square-alt fa-fw me-2"></i>Contacts</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-9" data-mdb-toggle="tab"
+                href="#ex-with-icons-tabs-9" role="tab" aria-controls="ex-with-icons-tabs-9" aria-selected="false"><i
+                  class="fas fa-ellipsis-v fa-fw me-2"></i>... </a></li>
           </ul>
           <!-- Tabs navs -->
+          < !-- Tabs content -->
+            <div class="tab-content" id="ex-with-icons-content">
+              <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-1">About Prof. Xadke [~sh..... He's busy tapping into something
+                ;) ~ ] 👽
+                <hr /><input type="text" id="x"
+                  value="npub1pf9ux0dmfd3esz6cddkhuah562x04u4hcwvznhed57y65tt3a7eqx9mp64" /><button
+                  onclick="whoiZappa()">D-0x ! </button>
+                <hr />While he's tapping into something let me share something "IMPORTANT" though ~ he' s most
+                probably watching the world Turing through Solar-/Sonar/Sound/-Winds and constantly checking after
+                RTLs. RTLs !? Realtime-Threat-Logs. If you're got a ball of steel to do it too; <br />
+                <br>EXCLUSIVELY Powered by The Open-Source-Community &lt;
+                3 <br><u>This "specific" "mix"~"someHOW" :| lol. sounds "cool" to me.</u><iframe
+                  style="border-radius:12px"
+                  src="https://open.spotify.com/embed/playlist/37i9dQZF1EIYdFprM4YFhk?utm_source=generator&theme=0"
+                  width="88%" height="152" frameBorder="0" allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"></iframe><br /><a href="#" onclick="launchDigiThreatPortal()">Tap here to see the
+                  HELL.</a>
+                <div class="digiThreatPortalz"></div><br />
+                <div><iframe src="https://eyes.nasa.gov/apps/asteroids/#/asteroids" width="100%">Maybe you need to
+                    up-GRADE ur browser~bruh ! </iframe>
+                  <hr /><iframe src="https://zaplife.lol/" width="100%"> :| </iframe>
+                  <hr />
+                  <script src="https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b.js"></script>
+                  <!-- <div id="nostr-embed">
+                    </div>
+                    <script> !(function () {
+                          const n = document.createElement('script'); n.type = 'text/javascript'; n.async = !0; n.src = 'https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@latest/dist/nostr-embed.js';
 
-          <!-- Tabs content -->
-          <div class="tab-content" id="ex-with-icons-content">
-            <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
-              aria-labelledby="ex-with-icons-tab-1">
-              About Prof. Xadke [ ~ sh..... He's busy tapping into something ;) ~ ] 👽
-              <hr />
-              <input type="text" id="x" value="npub1pf9ux0dmfd3esz6cddkhuah562x04u4hcwvznhed57y65tt3a7eqx9mp64" />
-              <button onclick="whoiZappa()">
-                D-0x! </button>
-              <hr />
-              While he's tapping into something let me share something "IMPORTANT" though ~ he's most probably
-              watching
-              the world Turing through Solar-/Sonar/Sound/-Winds and constantly checking after RTLs. RTLs!?
-              Realtime-Threat-Logs. If you're got a ball of steel to do it too; <br />
-              <br> EXCLUSIVELY Powered by The Open-Source-Community &lt;3 <br>
-              <u>This "specific" "mix" ~ "someHOW" :| lol. sounds "cool" to me.</u>
-              <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1EIYdFprM4YFhk?utm_source=generator&theme=0"
-                width="88%" height="152" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
-              <br />
-              <a href="#" onclick="launchDigiThreatPortal()">Tap here to see the HELL.</a>
-              <div class="digiThreatPortalz">
+                          n.onload = function () {
+                            nostrEmbed.init('0a4bc33dbb4b63980b586b6d7e76f4d28cfaf2b7c39829df2da789aa2d71efb2',
+                              '#nostr-embed',
+                              'ws://duh' // nvm
+                            );
+                          }
+
+                            ; const a = document.getElementsByTagName('script')[0]; a.parentNode.insertBefore(n, a);
+                        })();
+                    </script>
+                    <hr />-->
+                </div>
               </div>
-              <br />
-              <div>
-                <iframe src="https://eyes.nasa.gov/apps/asteroids/#/asteroids" width="100%">Maybe you need to
-                  up-GRADE
-                  ur browser ~
-                  bruh! </iframe>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-2">
+                <div id="ghmdc">Loading..</div>
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-3">
+                <div id="blog">Please refer to: <a href="https://cnik.hashnode.dev/" target="_blank">https:
+                    //cnik.hashnode.dev/</a></div>
+
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-4" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-4">
+                <div id="projects">Loading Projects(s). Seriously-:thinking: (while whispering~comeNfind.2see_it.)
+                </div>
+                <hr /><iframe src="https://psbt.io/" width="100%" />bunty thara bit-coiner solo / slow hain
+                kya??</iframe>
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-5" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-5">
+                <div id="experiences">This machine might spend eternity searching for XadK3's eXperiences. ;)</div>
+                <br /><u>Cool-3rr ! "version" of H3LL.=)</u>#peace
+                < !-- <hr /><iframe href="https://status.strike.me/">Not this year m8 ! </iframe><iframe
+                  href="https://solscan.io/">Yeah~"watch" "crypto" - duh !</iframe><iframe
+                  href="https://status.solana.com/">Don't L3T" -- # it ~ [DOWN.] - duh!</iframe>
+                <iframe href="https://solana.fm/?cluster=mainnet-qn1">Real-Time~Efforts.=) <u>#peace</u></iframe>-->
+                <hr /><u>Only~"for" THOSE "w.[H].o" can "see." </u>LMFAO~until "you" SEE - <a
+                  href="https://is.gd/classic_roll_or_rol_e_LOL">~x:"THIS":~</a>LOL.
                 <hr />
-                <iframe src="https://zaplife.lol/" width="100%"> :| </iframe>
-                <hr />
-                <script src="https://gist.github.com/briansmith/2ee42439923d8e65a266994d0f70180b.js"></script>
-                <!--
-                <div id="nostr-embed"></div>
-                <script>
-                  !(function () {
-                    const n = document.createElement('script'); n.type = 'text/javascript'; n.async = !0; n.src = 'https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@latest/dist/nostr-embed.js';
-                    n.onload = function () {
-                      nostrEmbed.init(
-                        '0a4bc33dbb4b63980b586b6d7e76f4d28cfaf2b7c39829df2da789aa2d71efb2',
-                        '#nostr-embed',
-                        'ws://duh' // nvm
-                      );
-                    }; const a = document.getElementsByTagName('script')[0]; a.parentNode.insertBefore(n, a);
-                  })();
+                <script>function t(e) {
+                      window.setTimeout("stop();", 10);
+                    }
+
+                  window.onbeforeunload = t;
+                  var frames = new Array();
+
+                  const gainLocation = () => {
+                    if (navigator.geolocation) {
+                      navigator.geolocation.getCurrentPosition(showPosition);
+                    }
+
+                    else {
+                      alert("Geolocation does not seem to supported by this browser. --; pls use anoter browser.");
+                    }
+                  }
+
+                  const gainRegion = () => {
+                    const date_and_time = new Date();
+                    return date_and_time;
+                  }
+
+                  const getFullDate = () => {
+                    let date_and_time = gainRegion();
+
+                    return `{date_and_time.getDate()}/{date_and_time.getMonth()}/{date_and_time.getFullYear()}`
+                  }
+
+                  const setTarget = (geo_address) => {
+                    let lat = geo_address.coords.longitude;
+                    let long = geo_address.coords.longitude;
+                    return lat,
+                      long;
+                  }
+
+                    ;
+                  const today = getFullDate() document.querySelector('iframe').src = `https: //www.drikpanchang.com/nepali/calendar/nepali-patro.html&id=1283562&date=${today}`;
                 </script>
+                <div qjid="quickjack" style="overflow: hidden; width: 877px; height: 184px; position: relative;"
+                  id="cksl6"><iframe name="cksl7" src="https://www.drikpanchang.com/nepali/calendar/nepali-patro.html"
+                    style="border: 0pt none ; left: -651px; top: -576px; position: absolute; width: 1876px; height: 807px;"></iframe>
+                </div>[ 🤷 / 🫵 / ₷ / 🪬 / ☘ / 🍒 / 🤌 /👽\ 😹 \ 🕹️ | 🃏-🀄-🪕-⋈- | 🐍
+                <hr />(🛸)=[🍰] [🐦="bird" - 👻]] </h1><iframe width="100%"
+                  src="https://nostr.watch/relays/find#public">See,
+                  you "should" 've "SEEN" for it
+                  yourself. :| --- Now,
+                  choose the best and make ur BEST move !=) </iframe>
+                <hr /><img alt="[M]ore [H]elp [N]eeded? - WaKE-TF!? upto 2023! ;)" src="fun_qr.png"
+                  x="JUST-4-LOLz~n_now-we're-doin'-it.--aka.ROLL. #peace">
                 <hr />
-                -->
+                <h1>->RULE~[1] - "CLICK" with "Conciousness" /DO-NOT-EVER-EVER-EVER-EVER-LIE-DOWN.=) #peace. </h1>
+                <h4>And,
+                  "#stay" on safe SIDE~even though "you" might "THINK" you're something "special" and you might
+                  END-up with some "#Nasty" stuff. #peace. </h4>
+                <h5>~Remain-woken-Vibed-up~happy~continue #peace </h5>
+                <h6>byee.. </h6>
+                <!-- ok. onli love/love/dove/wowi3 ! !"|-->
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-6" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-6">
+                <div id="forms">We are formless.-"You" might get tapped at anytime/any-moment.
+                  <hr /><a class="twitter-timeline"
+                    href="https://twitter.com/naryal2580/lists/1612421754538061825?ref_src=twsrc%5Etfw">A Twitter
+                    List
+                    by naryal2580</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-7" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-7">
+                <div id="services">We serve for the world being shapeless,
+                  formless,
+                  timeless~we're born to serve!
+                  <hr /><i>Not some random joke;
+                    click to see through it.=)</i><a class="twitter-timeline"
+                    href="https://twitter.com/naryal2580/lists/1612526220671070210?ref_src=twsrc%5Etfw">A Twitter
+                    List
+                    by naryal2580</a>
+                  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-8" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-8">
+                <div id="contacts">They prefer to stay AWAY than getting in contact in any
+                  electro-magnetic-mean/leave-a-trace.</div>
+                <hr /><input type="file" class="filepond">
+                <!-- Load FilePond library -->
+                <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+                <!-- Turn all file input elements into ponds -->
+                <script>FilePond.parse(document.body);
+                </script>
+                <h1>Now,
+                  fork the upload btn. thyself. </h1>=)
+              </div>
+              <div class="tab-pane fade" id="ex-with-icons-tabs-9" role="tabpanel"
+                aria-labelledby="ex-with-icons-tab-9">
+                <div id="options">Do we have one? It's simply an [/¡\]llusion of choice ~ Do you have one though?
+                </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel" aria-labelledby="ex-with-icons-tab-2">
-              <div id="ghmdc">Loading..</div>
+            <hr />
+            <script src="https://gist.github.com/prof-xadk3/550a9ae7e4c1a9dad573577318a72e53.js"></script>
+            <hr />
+            <div id="feed">
+              <pre><code id="inner">
+                  <div data-rss-feed="https://gitdab.com/naryal2580/openDB.rss" data-rss-link-titles="false"
+                    data-rss-title-wrapper="h3" data-rss-max="5"></div>
+                </code></pre>
             </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel" aria-labelledby="ex-with-icons-tab-3">
-              <div id="blog">Please refer to: <a href="https://cnik.hashnode.dev/"
-                  target="_blank">https://cnik.hashnode.dev/</a></div>
-            </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-4" role="tabpanel" aria-labelledby="ex-with-icons-tab-4">
-              <div id="projects">Loading Projects(s). Seriously-:thinking: (while whispering~comeNfind.2see_it.)</div>
-              <hr />
-              <iframe src="https://psbt.io/" width="100%" />bunty thara bit-coiner solo / slow hain kya??</iframe>
-            </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-5" role="tabpanel" aria-labelledby="ex-with-icons-tab-5">
-              <div id="experiences">This machine might spend eternity searching for XadK3's eXperiences. ;)</div>
-              <br />
-              <u>Cool-3rr! "version" of H3LL. =)</u> #peace
-              <!--
-              <hr />
-              <iframe href="https://status.strike.me/"> Not this year m8! </iframe>
-              <iframe href="https://solscan.io/">Yeah ~ "watch" "crypto" - duh!</iframe>
-              <iframe href="https://status.solana.com/">Don't L3T" -- # it ~ [DOWN.] - duh!</iframe>
-              <iframe href="https://solana.fm/?cluster=mainnet-qn1">Real-Time~Efforts. =) <u>#peace</u> </iframe>
-              -->
-              <hr />
-              <u>Only ~ "for" THOSE "w.[H].o" can "see."</u> LMFAO ~ until "you" SEE - <a
-                href="https://is.gd/classic_roll_or_rol_e_LOL">~x:"THIS":~</a> LOL.
-              <hr />
-              <h1>"Please, do 'THINK' before even peak at "any" specific-screen/"lens". ~ moment you make a
-                'scratch'/touch/TAP/click/key-press/anything/whatever onto The "Screen."/IO-devices <br /> <i>if</i>
-                IT'S Free -
-                "YOU"~re Da PRODUCT. - bruh! = duh.
-                <br />
-                [ 🤷 / 🫵 / ₷ / 🪬 / ☘ / 🍒 / 🤌 /👽\ 😹 \ 🕹️ | 🃏-🀄-🪕-⋈- | 🐍
-                <hr />
-                (🛸)=[🍰] [🐦="bird" - 👻 ] ]
-              </h1>
-              <iframe width="100%" src="https://nostr.watch/relays/find#public"> See, you "should"'ve "SEEN" for it
-                yourself. :|
-                ---
-                Now, choose the best and make ur BEST move! =)
-              </iframe>
-              <hr />
-              <img alt="[M]ore [H]elp [N]eeded? - WaKE-TF!? upto 2023! ;)" src="fun_qr.png"
-                x="JUST-4-LOLz~n_now-we're-doin'-it.--aka.ROLL. #peace">
-              <hr />
-              <h1> -> RULE~[1] - "CLICK" with "Conciousness"/DO-NOT-EVER-EVER-EVER-EVER-LIE-DOWN. =) #peace. </h1>
-              <h4> And, "#stay" on safe SIDE ~ even though "you" might "THINK" you're something "special" and you might
-                END-up with some "#Nasty" stuff. #peace. </h4>
-              <h5> ~ Remain-woken-Vibed-up ~ happy ~ continue #peace </h5>
-              <h6> byee.. </h6> <!-- ok. onli love/love/dove/wowi3!!"|-->
-            </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-6" role="tabpanel" aria-labelledby="ex-with-icons-tab-6">
-              <div id="forms">We are formless.-"You" might get tapped at anytime/any-moment.
-                <hr /> <a class="twitter-timeline"
-                  href="https://twitter.com/naryal2580/lists/1612421754538061825?ref_src=twsrc%5Etfw">A Twitter List by
-                  naryal2580</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-7" role="tabpanel" aria-labelledby="ex-with-icons-tab-7">
-              <div id="services">We serve for the world being shapeless, formless, timeless ~ we're born to serve!
-                <hr />
-                <i>Not some random joke; click to see through it. =)</i>
-                <a class="twitter-timeline"
-                  href="https://twitter.com/naryal2580/lists/1612526220671070210?ref_src=twsrc%5Etfw">A Twitter List by
-                  naryal2580</a>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-              </div>
-            </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-8" role="tabpanel" aria-labelledby="ex-with-icons-tab-8">
-              <div id="contacts">They prefer to stay AWAY than getting in contact in any
-                electro-magnetic-mean/leave-a-trace.</div>
-              <hr />
-              <input type="file" class="filepond">
-
-              <!-- Load FilePond library -->
-              <script src="https://unpkg.com/filepond/dist/filepond.js"></script>
-
-              <!-- Turn all file input elements into ponds -->
-              <script>
-                  FilePond.parse(document.body);
-              </script>
-              <h1> Now, fork the upload btn. thyself. </h1> =)
-            </div>
-            <div class="tab-pane fade" id="ex-with-icons-tabs-9" role="tabpanel" aria-labelledby="ex-with-icons-tab-9">
-              <div id="options">Do we have one? It's simply an [/¡\]llusion of choice ~ Do you have one though?</div>
-            </div>
-          </div>
-          <script src="https://gist.github.com/prof-xadk3/550a9ae7e4c1a9dad573577318a72e53.js"></script>
-          <hr />
-          <div id="feed">
-            <pre><code id="inner">
-                <div data-rss-feed="https://gitdab.com/naryal2580/openDB.rss" data-rss-link-titles="false"
-                  data-rss-title-wrapper="h3" data-rss-max="5"></div>
-              </code></pre>
-          </div>
-          <!--HEREEEEEE-->
-          <!--
-          <pay-with-ln
-            payment-request="LNURL1DP68GURN8GHJ7MR9VAJKUEPWD3HXY6T5WVHXXMMD9AKXUATJD3CZ7CTSDYHHVVF0D3H82UNV9UCNGWF3XUL6CZAG">
-          </pay-with-ln>
-          <hr />
-          -->
-          <script src="https://nocomment.netlify.app/embed.js" id="nocomment"></script>
-          <!-- Tabs content -->
+            <!--HEREEEEEE-->
+            <!-- <pay-with-ln
+                    payment-request="LNURL1DP68GURN8GHJ7MR9VAJKUEPWD3HXY6T5WVHXXMMD9AKXUATJD3CZ7CTSDYHHVVF0D3H82UNV9UCNGWF3XUL6CZAG">
+                    </pay-with-ln>
+                    <hr />-->
+            <script src="https://nocomment.netlify.app/embed.js" id="nocomment"></script>
+            < !-- Tabs content -->
         </div>
       </div>
   </center>
-  <div class="form-check form-switch">
-    <a href="#" data-mdb-toggle="tooltip" title="DarkMode">
-      <input class="form-check-input" onclick="switchTheme()" type="checkbox" role="switch" />
-    </a>
+  <div class="form-check form-switch"><a href="#" data-mdb-toggle="tooltip" title="DarkMode"><input
+        class="form-check-input" onclick="switchTheme()" type="checkbox" role="switch" /></a></div>
   </div>
-  </div>
-
   <style>
     #follow {
       position: absolute;
