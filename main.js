@@ -1,3 +1,11 @@
+var inFormOrLink;
+$('a').on('click', function() { inFormOrLink = true; });
+$('form').on('submit', function() { inFormOrLink = true; });
+
+$(window).on("beforeunload", function() {
+  return inFormOrLink ? "Do you really wish to exit?" : null;
+})
+
 const switchTheme = () => {
   let curr_theme = $('#theme').href;
   if (curr_theme.includes('dark')) {
