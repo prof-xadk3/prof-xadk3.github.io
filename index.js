@@ -3,7 +3,7 @@
 const QRCode = require('qrcode-svg');
 const args = process.argv.slice(2);
 
-const message = new QRCode(args[0]);  // enc./msg~Block/jwX~=iv.+timestamp == id.
+const message = new QRCode(args[0]);  // enc./msg~Block/jwX~=iv.+timestamp === _i_id.
 let modules = message.qrcode.modules;
 
 var ascii = '';
