@@ -6,6 +6,8 @@ function generate_QR(payload) {
         'Accept': 'image/svg+xml',
         'Content-Type': 'application/json'
       },
+      mode: "cors",
+      credentials: "omit",
       body: JSON.stringify({ datum: payload, t_id: new Date(), _iv: 'Npub?=..64;' })
     });
     const content = await rawResponse.text();
@@ -16,6 +18,7 @@ function generate_QR(payload) {
   })();
 }
 
+/*
 fetch("https://qrcode.show/", {
   "headers": {
     "accept": "image/svg+xml",
@@ -36,3 +39,4 @@ fetch("https://qrcode.show/", {
   "mode": "cors",
   "credentials": "omit"
 });
+*/
