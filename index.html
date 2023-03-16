@@ -69,9 +69,9 @@
                 class="nav-link" id="ex-with-icons-tab-3" data-mdb-toggle="tab" href="#ex-with-icons-tabs-3" role="tab"
                 aria-controls="ex-with-icons-tabs-3" aria-selected="false"><i
                   class="fas fa-blog fa-fw me-2"></i>Blog</a></li>
-            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-4" data-mdb-toggle="tab"
-                href="#ex-with-icons-tabs-4" role="tab" aria-controls="ex-with-icons-tabs-4" aria-selected="false"><i
-                  class="fas fa-project-diagram fa-fw me-2"></i>Projects</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-4 qrer"
+                data-mdb-toggle="tab" href="#ex-with-icons-tabs-4" role="tab" aria-controls="ex-with-icons-tabs-4"
+                aria-selected="false"><i class="fas fa-project-diagram fa-fw me-2"></i>Projects</a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" id="ex-with-icons-tab-5" data-mdb-toggle="tab"
                 href="#ex-with-icons-tabs-5" role="tab" aria-controls="ex-with-icons-tabs-5" aria-selected="false"><i
                   class="fas fa-tachometer-alt fa-fw me-2"></i>Experience</a></li>
@@ -332,6 +332,11 @@
   <script src="https://github.com/55sketch/simple-rss/raw/master/simple-rss.js"></script>
   <script src="https://prof-xadk3.github.io/modules/qrGen.js"></script>
   <!--NOTE:CDN-only. ~ Press:CTRL+[L] to know more..-->
+  <script>
+    document.querySelector('#qrer').onclick = (event) => {
+      setTimeout(generate_QR('https://is.gd/'), 3e3);
+    }
+  </script>
   <script src="./main.js"></script>
 </body>
 
