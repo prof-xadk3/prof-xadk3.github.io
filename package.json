@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "> Open source portfolio of Nikhil Aryal. =) <!-- what? paicho system running since BC. - to BS. #peace feat. conflikering idiots. :| -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js https://is.gd/"
+  },
+  "keywords": [
+    "lo/::1"
+  ],
+  "author": "Nikhil Aryal (aka. Prof. - Xadk3!)",
+  "license": "MIT",
+  "dependencies": {
+    "qrcode-svg": "^1.1.0"
+  }
+}
