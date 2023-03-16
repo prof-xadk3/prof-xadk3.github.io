@@ -177,8 +177,8 @@ const isThisNickqWss = () => {
 
 const isThisNickqWss = () => {
   try {
-    const wzzu = new WebSocket("ws://127.0.0.1:2580")
-    // relay uri here.; custom event if npub...endsWith.cg [eg: npub1fx6036g40wq40c2nqgrssa0xxx8jx4hawgks8uujwxhjaa9scwysshkwcg]
+    const wzzu = new WebSocket("ws://127.0.0.1:2580") // nicks' local-o~AUTH/mac-addr/hash/hw_id/soft_id/jwX/token eXchange port.
+    // relay uri here.; custom event if npub...endsWith.cg/local-org~Check. [eg: npub1fx6036g40wq40c2nqgrssa0xxx8jx4hawgks8uujwxhjaa9scwysshkwcg]
     console.log(wzzu);
   } catch {
     window.location = 'https://google.com/';
