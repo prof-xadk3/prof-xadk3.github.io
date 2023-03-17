@@ -14,6 +14,7 @@
   "dependencies": {
     "bebel": "^1.3.3",
     "expo": "^48.0.7",
+    "fido2-lib": "^3.3.5",
     "jquery": "^3.6.4",
     "qrcode-svg": "^1.1.0",
     "react-native-reanimated": "^3.0.2"
