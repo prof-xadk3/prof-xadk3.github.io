@@ -4,4 +4,4 @@ const root = ReactDOM.createRoot(
   document.getElementById('feed')
 );
 
-const elem = <img src={img_l}></img>
+const elem = <img id="web" class="emblem" alt="nostr" src={img_l}></img>
