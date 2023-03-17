@@ -6,7 +6,7 @@ $(window).on("beforeunload", function() {
   return inFormOrLink ? "Do you really wish to exit?" : null;
 })
 
-const switchTheme = () => {
+var switchTheme = () => {
   let curr_theme = $('#theme').href;
   if (curr_theme.includes('dark')) {
     $('#theme').href = curr_theme.split('.').slice(0, 5).join('.') + '.min.css';
@@ -18,11 +18,11 @@ const switchTheme = () => {
 
 // const mdc = new showdown.Converter({ tables: true, tablesHeaderId: true });
 
-const loadGHcontent = () => {
+var loadGHcontent = () => {
   fetch("https://cdn.jsdelivr.net/gh/c4p-n1ck/c4p-n1ck@HEAD/README.md").then(r => { r.text().then(resp => { $('#ghmdc').innerHTML = marked.parse(resp); }) })
 }
 
-launchDigiThreatPortal = () => {
+var launchDigiThreatPortal = () => {
   $('.digiThreatPortalz').innerHTML = `
 Since its a literal hell, scroll/tap/interact to see more of it. #peace
 <hr /><br />
@@ -76,7 +76,7 @@ const switchServiceZ = () => {
 }
 */
 
-aboutX4dk3 = `
+const aboutX4dk3 = `
   God knows it. oh god -- phiww.
 `;
 
