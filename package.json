@@ -12,6 +12,7 @@
   "author": "Nikhil Aryal (aka. Prof. - Xadk3!)",
   "license": "MIT",
   "dependencies": {
+    "jquery": "^3.6.4",
     "qrcode-svg": "^1.1.0"
   }
 }
