@@ -3,5 +3,6 @@ node_modules/
 *.lock
 *.zip
 *.ts
+*/*.*tmp*/*
 lib/
 src/
