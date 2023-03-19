@@ -103,4 +103,4 @@ var f2l = new main_js_1.Fido2Lib({
   authenticatorRequireResidentKey: false,
   authenticatorUserVerification: "required"
 });
-*/
+*/ // ACME challenge pass obj. =)
