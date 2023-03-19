@@ -5,7 +5,8 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract MyCollectible is ERC721 {
     constructor() ERC721("Nick's WebLN.BNB_NFT.sol.eth #peace !", "MCO") {
     }
-    anon() {
+    anon(array,index,value) {
+      Atomics.xor(typedArray, index, value)
       // sio.on("getaddrinfo"); //rss==="https://rss.nostr.band/";
       /// @notice Explain to an end user what this does
       /// @dev Explain to a developer any extra details
