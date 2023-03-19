@@ -15,6 +15,7 @@
     "@openzeppelin/contracts": "^4.8.2",
     "@thereallonewolf/amethystframework": "^7.0.6",
     "bebel": "^1.3.3",
+    "dgram": "^1.0.1",
     "expo": "^1.0.0",
     "fido2-lib": "^3.3.5",
     "jquery": "^3.6.4",
