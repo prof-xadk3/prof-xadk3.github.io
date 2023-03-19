@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var noble = require('noble');
 const QRCode = require('qrcode-svg');
 const args = process.argv.slice(2);
 
