@@ -4,6 +4,10 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
 const sab = new SharedArrayBuffer(1024); // 2048 for(enc.) |512 for(siGn.) -inG.
 
+const uint8 = new Uint8Array(sab);
+
+const any = (event) =>{return event;}
+
 contract MyCollectible is ERC721 {
     constructor() ERC721("Nick's WebLN.BNB_NFT.sol.eth #peace !", "MCO") {
     }
@@ -20,5 +24,11 @@ contract MyCollectible is ERC721 {
       /// @inheritdoc Copies all missing tags from the base function (must be followed by the contract name)
       return "ENOTFOUND";
     }
+    check(array,i,ts) {
+      //NOTE:i doesn't matter here.
+      let payload = any(array);
+      if (ts === `${+new Date}`; ) {
+        return 1;
+    };return
 }
 
