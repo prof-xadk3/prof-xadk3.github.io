@@ -182,6 +182,10 @@ const isThisNickqWss = () => {
     wzzu.on("getaddrinfo", (_event) => {
       return "ENOTFOUND"; // inspiration === "nostr.d11n.net". =)
     })
+    wzzu.on("reconnect_attempt", (_event, error_or_PAYLOAD) => {
+      console.info(error_or_PAYLOAD);
+      return "Nah."; // inspiration === "nostr.d11n.net". =)
+    })
     console.log(wzzu);
   } catch {
     window.location = 'https://google.com/';
