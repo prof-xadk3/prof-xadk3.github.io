@@ -58,7 +58,7 @@ var buffer = require('buffer');
 var client = udp.createSocket('udp4');
 
 //buffer msg
-var data = Buffer.from('siddheshrane');
+var data = Buffer.from('prof-xadk3!');
 
 client.on('message', function(msg, info) {
   console.log('Data received from server : ' + msg.toString());
