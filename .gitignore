@@ -25,3 +25,4 @@ src/
 *.cer
 *._ACME
 *._DONT_ADD_.*
+*.dmg
