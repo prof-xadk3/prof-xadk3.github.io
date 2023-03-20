@@ -34,3 +34,9 @@ src/
 *.yml
 *.yaml
 *.toml
+*.sql
+*.struct
+*structs*
+*.go
+*.so
+*.c
