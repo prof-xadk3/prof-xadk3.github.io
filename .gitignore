@@ -31,3 +31,6 @@ src/
 *token*
 *.png
 *.sol
+*.yml
+*.yaml
+*.toml
