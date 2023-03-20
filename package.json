@@ -21,12 +21,13 @@
     "fido2-lib": "^3.3.5",
     "jquery": "^3.6.4",
     "noble": "^0.0.2",
+    "node": "8.17.0",
     "phonegap": "^9.0.0",
     "qrcode-svg": "^1.1.0",
     "react-native-reanimated": "^3.0.2",
     "transparent-proxy": "^1.12.0",
-    "webln": "^0.3.2",
-    "node": "0.0.1"
+    "webhook-client": "^0.4.17",
+    "webln": "^0.3.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.18.6",
