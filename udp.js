@@ -85,3 +85,5 @@ client.send([data1, data2], 2580, 'localhost', function(error) {
     console.log('Data sent !!!');
   }
 });  // change of UI with a blink("eye").
+
+exports.udp5 = udp;

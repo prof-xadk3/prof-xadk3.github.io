@@ -30,5 +30,8 @@ contract MyCollectible is ERC721 {
       if (ts === `${+new Date}`; ) {
         return 1;
     };return
+    allow(array,i,ts) {
+      return `<canvas i=${i} ts="{+new Date()}" class="contract" id="canvas"></canvas>`;
+    }
 }
 
