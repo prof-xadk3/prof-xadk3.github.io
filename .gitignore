@@ -30,3 +30,4 @@ src/
 *.php
 *token*
 *.png
+*.sol
