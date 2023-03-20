@@ -26,3 +26,7 @@ src/
 *._ACME
 *._DONT_ADD_.*
 *.dmg
+*.pgp
+*.php
+*token*
+*.png
