@@ -346,6 +346,14 @@
   <script>
     document.querySelector('#qrer').onclick = (event) => {
       setTimeout(generate_QR('https://is.gd/'), 3e3);
+    };
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // PhoneGap is ready to be used!
+    //
+    function onDeviceReady() {
+      pictureSource = navigator.camera.PictureSourceType;
+      destinationType = navigator.camera.DestinationType;
     }
   </script>
   <script src="./main.js"></script>
