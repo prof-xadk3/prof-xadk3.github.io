@@ -4,7 +4,7 @@
   "description": "> Open source portfolio of Nikhil Aryal. =) <!-- what? paicho system running since BC. - to BS. #peace feat. conflikering idiots. :| -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo -n '\u001b[32m' && node index.js https://is.gd/ && echo -n '\u001b[0m' && upnp-sub-mqtt 93196fedc849431280e48a25ab7121b5.s2.eu.hivemq.cloud"
+    "test": "echo -n '\u001b[32m' && node index.js https://is.gd/ && echo -n '\u001b[0m' && upnp-sub-mqtt 93196fedc849431280e48a25ab7121b5.s2.eu.hivemq.cloud:8883"
   },
   "keywords": [
     "lo/::1"
