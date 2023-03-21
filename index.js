@@ -1,7 +1,9 @@
-#!/usr/bin/env node
+#!/usr/bin/env deni
 
-var noble = require('noble');
-const QRCode = require('qrcode-svg');
+import { dpx } from "https://deno.land/x/dpx/mod.ts";
+// var noble = require('noble');
+// const QRCode = dpx('qrcode-svg');
+import { qrcode } from "https://deno.land/x/qrcode/mod.ts";
 const args = process.argv.slice(2);
 
 const message = new QRCode(args[0]);  // enc./msg~Block/jwX~=iv.+timestamp === _i_id.
