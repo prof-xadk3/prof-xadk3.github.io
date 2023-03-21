@@ -1,5 +1,8 @@
 #!/usr/bin/env deni
 
+import once from 'https://deno.land/x/once@typescript/index.ts'
+const ran = once(Math.random); // heh!?
+
 import { dpx } from "https://deno.land/x/dpx/mod.ts";
 // var noble = require('noble');
 // const QRCode = dpx('qrcode-svg');
@@ -119,3 +122,24 @@ var f2l = new main_js_1.Fido2Lib({
   authenticatorUserVerification: "required"
 });
 */ // ACME challenge pass obj. =)
+
+export * as commandErrors from './command-errors.ts'
+export * as commands from './command-types.ts'
+export * as flagErrors from './flag-errors.ts'
+export * as flags from './flag-types.ts'
+export * as symbols from './symbols.ts'
+export * as types from './types.ts'
+export * as valueErrors from './value-errors.ts'
+export * as values from './value-types.ts'
+
+export * from './command-types.ts'
+export * from './flag-types.ts'
+export * from './symbols.ts'
+export * from './types.ts'
+export * from './value-types.ts'
+
+export { CommandError } from './command-errors.ts'
+export { FlagError } from './flag-errors.ts'
+export { ValueError } from './value-errors.ts'
+
+export { args, default } from './wrapper.ts'
