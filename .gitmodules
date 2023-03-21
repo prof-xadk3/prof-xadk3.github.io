@@ -1,0 +1,3 @@
+[submodule ".api/.api/GTR"]
+	path = .api/.api/GTR
+	url = https://github.com/FeiWang96/GTR.git
