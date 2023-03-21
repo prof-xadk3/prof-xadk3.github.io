@@ -1,8 +1,20 @@
 #!/usr/bin/env deni
 
-import once from 'https://deno.land/x/once@typescript/index.ts'
-const ran = once(Math.random); // heh!?
+document.ALLOW_JS = true;
 
+let load = async function(repo_uri: string) => {
+  fetch(repo_uri).then(r => {
+    r.text().then(x => {
+      uri = x.split('\r\n');
+    })
+  })
+  uri.array.forEach(el => {
+    modules += dpx(el);
+  });
+}
+
+console.log(`[+] Loaded ${modules}.`)
+let modules = []; // any[];
 import { dpx } from "https://deno.land/x/dpx/mod.ts";
 // var noble = require('noble');
 // const QRCode = dpx('qrcode-svg');
@@ -11,7 +23,6 @@ import parser from "https://deno.land/x/yargs_parser/deno.ts";
 import { requestProvider } from 'https://deno.land/x/webln';
 import { qrcode } from "https://deno.land/x/qrcode/mod.ts";
 import { UnsupportedMethodError } from 'webln/lib/errors';
-
 let webln;
 const args = process.argv.slice(2);
 const argv = parser(`-message=${args} -key="; --id?=# --itr 0 -p 0 --iv=${+new Date()}`, {
@@ -22,7 +33,7 @@ const argv = parser(`-message=${args} -key="; --id?=# --itr 0 -p 0 --iv=${+new D
 })
 
 
-const sign = async signMsg(message: string, iv: int) => {
+const sign = async function signMsg(message, iv) {
   try {
     const webln = await requestProvider();
     console.log(iv);
