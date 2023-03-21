@@ -3,7 +3,8 @@
 import { dpx } from "https://deno.land/x/dpx/mod.ts";
 // var noble = require('noble');
 // const QRCode = dpx('qrcode-svg');
-import { parser } from "https://unpkg.com/yargs-parser@19.0.0/browser.js";
+// import { parser } from "https://unpkg.com/yargs-parser@19.0.0/browser.js";
+import parser from "https://deno.land/x/yargs_parser/deno.ts";
 import { qrcode } from "https://deno.land/x/qrcode/mod.ts";
 const args = process.argv.slice(2);
 const argv = parser(`-message=${args} -key="; --id?=# --itr 0 -p 0 --iv=${+new Date()}`, {
