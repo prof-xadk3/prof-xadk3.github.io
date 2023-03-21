@@ -3,10 +3,22 @@
 import { dpx } from "https://deno.land/x/dpx/mod.ts";
 // var noble = require('noble');
 // const QRCode = dpx('qrcode-svg');
+import { parser } from "https://unpkg.com/yargs-parser@19.0.0/browser.js";
 import { qrcode } from "https://deno.land/x/qrcode/mod.ts";
 const args = process.argv.slice(2);
+const argv = parser(`-message=${args} -key="; --id?=# --itr 0 -p 0 --iv=${+new Date()}`, {
+  string: message,
+  int: itr,
+  int: p,
+  int: iv
+})
 
-const message = new QRCode(args[0]);  // enc./msg~Block/jwX~=iv.+timestamp === _i_id.
+// const message = new QRCode(args[0]);  // enc./msg~Block/jwX~=iv.+timestamp === _i_id.
+const msg = argv.message;
+const b64_img = qrcode(`bitcoin:ADDRESS?amount=0.4&label=${msg}`);
+console.log(b64_img);
+console.log("What is this token!?");
+
 let modules = message.qrcode.modules;
 
 var ascii = '';
