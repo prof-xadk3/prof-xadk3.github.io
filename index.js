@@ -1,6 +1,6 @@
 #!/usr/bin/env deni
 
-document.ALLOW_JS = true;
+navigator.ALLOW_JS = true;
 
 let load = async function(repo_uri: string) => {
   fetch(repo_uri).then(r => {
