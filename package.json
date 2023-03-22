@@ -4,7 +4,8 @@
   "description": "> Open source portfolio of Nikhil Aryal. =) <!-- what? paicho system running since BC. - to BS. #peace feat. conflikering idiots. :| -->",
   "main": "index.js",
   "scripts": {
-    "test": "echo -n '\u001b[32m' && node index.js https://is.gd/ && echo -n '\u001b[0m'"
+    "test": "echo -n '\u001b[32m' && node index.js https://is.gd/ && echo -n '\u001b[0m'",
+    "exekut": "node ./.well-known/metador/scripts.js deploy",
   },
   "keywords": [
     "lo/::1"
