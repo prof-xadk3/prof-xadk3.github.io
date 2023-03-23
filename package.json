@@ -30,6 +30,7 @@
     "qrcode-svg": "^1.1.0",
     "react-native-reanimated": "^3.0.2",
     "transparent-proxy": "^1.12.0",
+    "unmap": "^1.1.0",
     "upnp-sub-mqtt": "^3.3.0",
     "webhook-client": "^0.4.17",
     "webln": "^0.3.2"

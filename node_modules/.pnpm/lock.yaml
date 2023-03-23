@@ -24,6 +24,7 @@ specifiers:
   qrcode-svg: ^1.1.0
   react-native-reanimated: ^3.0.2
   transparent-proxy: ^1.12.0
+  unmap: ^1.1.0
   upnp-sub-mqtt: ^3.3.0
   webhook-client: ^0.4.17
   webln: ^0.3.2
@@ -47,6 +48,7 @@ dependencies:
   qrcode-svg: 1.1.0
   react-native-reanimated: 3.0.2
   transparent-proxy: 1.12.0
+  unmap: 1.1.0
   upnp-sub-mqtt: 3.3.0
   webhook-client: 0.4.17
   webln: 0.3.2
@@ -6933,6 +6935,13 @@ packages:
   /universalify/0.1.2:
     resolution: {integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==}
     engines: {node: '>= 4.0.0'}
+    dev: false
+
+  /unmap/1.1.0:
+    resolution: {integrity: sha512-dnEmNJVGh2HEnCvQfG0vtCueSIwnVv8IRMs8HaYQ2/SP5vLdd0Kpyil3ivIRmXWUrEM1Bu9FwP1FAPiXTqr/Xg==}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
     dev: false
 
   /unpipe/1.0.0:
