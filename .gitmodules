@@ -1,3 +1,6 @@
 [submodule ".api/.api/GTR"]
 	path = .api/.api/GTR
 	url = https://github.com/FeiWang96/GTR.git
+[submodule ".api/.api/AkropolisToken"]
+	path = .api/.api/AkropolisToken
+	url = https://github.com/akropolisio/AkropolisToken
