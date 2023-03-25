@@ -1,0 +1,22 @@
+{
+  "name": "ert",
+  "version": "0.1.0",
+  "description": "idk",
+  "main": "nick.js",
+  "scripts": {
+    "test": "node nick.js"
+  },
+  "keywords": [
+    "nick",
+    "jack",
+    "nostr"
+  ],
+  "author": "Nikhil Aryal <station.gentleman@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "message": "^0.0.1",
+    "mocha": "^10.2.0",
+    "openpgp": "^5.7.0",
+    "websockets": "^0.2.0"
+  }
+}
