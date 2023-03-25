@@ -24,6 +24,7 @@ specifiers:
   message-bus-client: ^4.3.2
   noble: ^0.0.2
   node: 8.17.0
+  nostr: ^0.2.8
   phonegap: ^9.0.0
   qrcode: ^1.5.1
   qrcode-svg: ^1.1.0
@@ -54,6 +55,7 @@ dependencies:
   message-bus-client: 4.3.2
   noble: 0.0.2
   node: 8.17.0
+  nostr: 0.2.8
   phonegap: 9.0.0
   qrcode-svg: 1.1.0
   react-native-reanimated: 3.0.2
@@ -5759,6 +5761,11 @@ packages:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
     dev: false
 
+  /noble-secp256k1/1.2.14:
+    resolution: {integrity: sha512-GSCXyoZBUaaPwVWdYncMEmzlSUjF9J/YeEHpklYJCyg8wPuJP3NzDx0BkiwArzINkdX2HJHvUJhL6vVWPOQQcg==}
+    deprecated: Switch to namespaced @noble/secp256k1 for security and feature updates
+    dev: false
+
   /noble/0.0.2:
     resolution: {integrity: sha512-Rd7KvC7uh5th5BSkdMvCv7OCM8ZvHu8oT2GiJiC+xFd5iijbmKA6cT261ZN0o1p++7NHXJa1LccWrN5p1fCqrQ==}
     engines: {node: 0.8.x}
@@ -5851,6 +5858,16 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       remove-trailing-separator: 1.1.0
+    dev: false
+
+  /nostr/0.2.8:
+    resolution: {integrity: sha512-p25OQiEB5x8rWWoWLRRbxtxQiaQgypaQQakSKw5+cp/SW0DXea/soMzqmTXei1I6HrcARuyfvedGTdoEU471Ow==}
+    dependencies:
+      noble-secp256k1: 1.2.14
+      ws: 8.13.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
     dev: false
 
   /npm-normalize-package-bin/1.0.1:

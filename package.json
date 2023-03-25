@@ -31,6 +31,7 @@
     "message-bus-client": "^4.3.2",
     "noble": "^0.0.2",
     "node": "8.17.0",
+    "nostr": "^0.2.8",
     "phonegap": "^9.0.0",
     "qrcode-svg": "^1.1.0",
     "react-native-reanimated": "^3.0.2",
