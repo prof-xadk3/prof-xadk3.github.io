@@ -15,6 +15,7 @@ specifiers:
   dgram: ^1.0.1
   eth-phishing-detect: ^1.2.0
   expo: ^1.0.0
+  faker: ^6.6.6
   fido2-lib: ^3.3.5
   gyp: ^0.5.0
   jquery: ^3.6.4
@@ -44,6 +45,7 @@ dependencies:
   dgram: 1.0.1
   eth-phishing-detect: 1.2.0
   expo: 1.0.0
+  faker: 6.6.6
   fido2-lib: 3.3.5
   gyp: 0.5.0
   jquery: 3.6.4
@@ -3850,6 +3852,10 @@ packages:
   /eyes/0.1.8:
     resolution: {integrity: sha512-GipyPsXO1anza0AOZdy69Im7hGFCNB7Y/NGjDlZGJ3GJJLtwNSb2vrzYrTYJRrRloVx7pl+bhUaTB8yiccPvFQ==}
     engines: {node: '> 0.1.90'}
+    dev: false
+
+  /faker/6.6.6:
+    resolution: {integrity: sha512-9tCqYEDHI5RYFQigXFwF1hnCwcWCOJl/hmll0lr5D2Ljjb0o4wphb69wikeJDz5qCEzXCoPvG6ss5SDP6IfOdg==}
     dev: false
 
   /fast-deep-equal/3.1.3:
