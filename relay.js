@@ -7,11 +7,14 @@ const scsi = "wss://nostr-pub.wellorder.net"
 const edata_relay_pool = "wss://relay.f7z.io,wss://nos.lol,wss://relay.nostr.info,wss://nostr-pub.wellorder.net,wss://relay.current.fyi,wss://relay.nostr.band".split(',');
 const relays = [damus, scsi, ...edata_relay_pool];
 
+let counter = 0;
 const pool = RelayPool(relays)
 
 pool.on('open', relay => {
   relay.subscribe("subid", { limit: 2, kinds: [1], authors: [nick] });
   console.info(`[+] sab ko saab ${cg} mai jaancha la.`);
+  counter += 1;
+  console.log(`[+] ${counter} amount++ ? what!?`);
 });
 
 pool.on('eose', relay => {
