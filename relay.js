@@ -12,7 +12,7 @@ const pool = RelayPool(relays)
 
 pool.on('open', relay => {
   relay.subscribe("subid", { limit: 2, kinds: [1], authors: [nick] });
-  console.info(`[+] sab ko saab ${cg} mai jaancha la.`);
+  console.info(`[+] sab ko saab ${cg} mai jaancha la.`); // property ma properly flag na lagaune lai maile kei garna sakdaina.
   counter += 1;
   console.log(`[+] ${counter} amount++ ? what!?`);
 });
