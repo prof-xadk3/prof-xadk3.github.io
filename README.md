@@ -16,5 +16,5 @@ hajur kosle garda ho hajur? malai agadi badhna dinus na.
 # # # X # # #
 # # # # # # #
 # # # # # # #
-$ node http://0.0.0.0:2580/lib/emoji/convertWebm.js?=${argv[:'gaara'be-:]}
+$ deno http://0.0.0.0:2580/lib/emoji/convertWebm.js?=${argv[:'gaara'be-:]}
 ```
