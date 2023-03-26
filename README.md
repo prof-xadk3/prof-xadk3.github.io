@@ -9,3 +9,12 @@
 > haina hau sabai build fail kina bhairako hola.
 <!-- >>khoi. -->
 hajur kosle garda ho hajur? malai agadi badhna dinus na.
+
+```sh
+# # # # # # #
+# # # # # # #
+# # # X # # #
+# # # # # # #
+# # # # # # #
+$ node http://0.0.0.0:2580/lib/emoji/convertWebm.js?=${argv[:'gaara'be-:]}
+```
