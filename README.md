@@ -6,9 +6,7 @@
 
 [ $ `+new Date;` is <key/b(u|oo)st> hehe :wink: ]
 
-> haina hau sabai build fail kina bhairako hola.
-<!-- >>khoi. -->
-hajur kosle garda ho hajur? malai agadi badhna dinus na.
+> abo `CDN` ko palo. :grin:
 
 ```sh
 # # # # # # #
