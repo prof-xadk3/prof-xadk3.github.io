@@ -4,3 +4,6 @@
 [submodule ".api/.api/AkropolisToken"]
 	path = .api/.api/AkropolisToken
 	url = https://github.com/akropolisio/AkropolisToken
+[submodule ".well-known/.api/gftp"]
+	path = .well-known/.api/gftp
+	url = https://github.com/masneyb/gftp.git
