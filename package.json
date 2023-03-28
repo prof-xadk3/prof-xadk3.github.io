@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo -n '\u001b[32m' && node index.js https://is.gd/ && echo -n '\u001b[0m'",
-    "frame": "echo -n '\u001b[32m' && node frame.it.js https://twitter.com/elonmusk/status/1640554924588277761 && echo -n '\u001b[0m'"
+    "frame": "echo -n '\u001b[32m' && node frame.it.js https://twitter.com/elonmusk/status/1640554924588277761 && echo -n '\u001b[0m'",
+    "lock": "echo -n '\u001b[32m' && node index.js https://m.facebook.com/n4ry4l2580 && echo -n '\u001b[0m'"
   },
   "keywords": [
     "lo/::1"
@@ -48,6 +49,7 @@
     "preact": "^10.13.2",
     "qrcode-svg": "^1.1.0",
     "react-native-reanimated": "^3.0.2",
+    "registry-mock": "^2.0.0",
     "source-map-url": "^0.4.1",
     "transparent-proxy": "^1.12.0",
     "unmap": "^1.1.0",
