@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
-upnp - sub - mqtt - u "$1"
+echo "[i] Make sure you're running me from an either rooted or pseudo rooted environment! ;)"
+sudo upnp - sub - mqtt - u "$1"
