@@ -16,3 +16,5 @@
 # # # # # # #
 $ deno http://0.0.0.0:2580/lib/emoji/convertWebm.js?=${argv[:'gaara'be-:]}
 ```
+
+> LOGIC: yo manche kina fasna hudaina? || yo fasyo bhane sablai fasaucha. || purna biram.
