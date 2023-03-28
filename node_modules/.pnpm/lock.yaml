@@ -20,6 +20,7 @@ specifiers:
   fido2: ^1.0.0
   fido2-lib: ^3.3.5
   gyp: ^0.5.0
+  http-echo-server: ^2.1.1
   jquery: ^3.6.4
   magnet-uri: ^7.0.2
   mapbox.js: ^3.3.1
@@ -28,6 +29,7 @@ specifiers:
   node: 8.17.0
   nostr: ^0.2.8
   phonegap: ^9.0.0
+  preact: ^10.13.2
   qrcode: ^1.5.1
   qrcode-svg: ^1.1.0
   react-native-reanimated: ^3.0.2
@@ -53,6 +55,7 @@ dependencies:
   fido2: 1.0.0
   fido2-lib: 3.3.5
   gyp: 0.5.0
+  http-echo-server: 2.1.1
   jquery: 3.6.4
   magnet-uri: 7.0.2
   mapbox.js: 3.3.1
@@ -61,6 +64,7 @@ dependencies:
   node: 8.17.0
   nostr: 0.2.8
   phonegap: 9.0.0
+  preact: 10.13.2
   qrcode-svg: 1.1.0
   react-native-reanimated: 3.0.2
   transparent-proxy: 1.12.0
@@ -4158,6 +4162,11 @@ packages:
       has-symbols: 1.0.3
     dev: false
 
+  /get-port/4.2.0:
+    resolution: {integrity: sha512-/b3jarXkH8KJoOMQc3uVGHASwGLPq3gSFJ7tgJm2diza+bydJPTGOibin2steecKeOylE8oY2JERlVWkAJO6yw==}
+    engines: {node: '>=6'}
+    dev: false
+
   /get-stream/3.0.0:
     resolution: {integrity: sha512-GlhdIUuVakc8SJ6kK0zAFbiGzRFzNnY4jUuEbV9UROo4Y+0Ny4fjvcZFVTeDA4odpFyOQzaw6hXukJSq/f28sQ==}
     engines: {node: '>=4'}
@@ -4481,6 +4490,13 @@ packages:
     dependencies:
       deep-equal: 1.0.1
       http-errors: 1.8.1
+    dev: false
+
+  /http-echo-server/2.1.1:
+    resolution: {integrity: sha512-ybEQrtw0fGmSHZHa8W0tjHFz+m9ZBxWT2aYGWTaAlU2fldrxbjOsgs8qfbXBLwJMsToQIg89mTS9kbw44ZRr8A==}
+    hasBin: true
+    dependencies:
+      get-port: 4.2.0
     dev: false
 
   /http-errors/1.6.3:
@@ -6475,6 +6491,10 @@ packages:
   /posix-character-classes/0.1.1:
     resolution: {integrity: sha512-xTgYBc3fuo7Yt7JbiuFxSYGToMoz8fLoE6TC9Wx1P/u+LfeThMOAqmuyECnlBaaJb+u1m9hHiXUEtwW4OzfUJg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /preact/10.13.2:
+    resolution: {integrity: sha512-q44QFLhOhty2Bd0Y46fnYW0gD/cbVM9dUVtNTDKPcdXSMA7jfY+Jpd6rk3GB0lcQss0z5s/6CmVP0Z/hV+g6pw==}
     dev: false
 
   /prepend-http/1.0.4:
