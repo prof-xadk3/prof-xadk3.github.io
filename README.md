@@ -1,4 +1,4 @@
-# <a href="https://prof-xadk3.github.io"> `https://prof-xadk3.github.io` </a> [ CM 252 k. ]
+# <a href="https://prof-xadk3.github.io"> `https://prof-xadk3.github.io` </a> [ CM 252 # ]
 
 > git.io/:wink:_blob_svg_img. lolz.
 
@@ -18,3 +18,4 @@ $ deno http://0.0.0.0:2580/lib/emoji/convertWebm.js?=${argv[:'gaara'be-:]}
 ```
 
 > LOGIC: yo manche kina fasna hudaina? || yo fasyo bhane sablai fasaucha. || purna biram.
+#
