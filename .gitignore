@@ -10,3 +10,12 @@ node_modules
 *.py
 *.sh
 *.ts
+*.rs
+*.txt
+*.*lock
+*.lock
+
+
+# Added by cargo
+
+/target
