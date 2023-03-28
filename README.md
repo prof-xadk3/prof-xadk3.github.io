@@ -6,7 +6,7 @@
 
 [ $ `+new Date;` is <key/b(u|oo)st> hehe :wink: ]
 
-> abo `CDN` ko palo. :grin:
+> abo sabai `PASS` bhayesi maile ni `pass` handinchu 12 VARCHAR mai :grin:
 
 ```sh
 # # # # # # #
