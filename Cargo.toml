@@ -6,4 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+ink = "4.1.0"
 jsonrpsee = "0.16.2"
+polkadot = "0.1.0"
+smoldot = "0.5.0"
+substrate = "0.1.0"
+wasmi = "0.29.0"
