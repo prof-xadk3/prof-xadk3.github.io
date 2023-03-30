@@ -12,4 +12,4 @@ if pub.startswith('nprofile:'):
 
 
 if __name__ == '__main__':
-  __import__('webbrowser').open_new_tab('https://noste.band/u/{pub}');
+  __import__('webbrowser').open_new_tab('https://nostr.band/u/{pub}');
