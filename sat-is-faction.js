@@ -21,6 +21,12 @@ pool.on('zap', relay => {
   console.log(relay);
 });
 
+pool.on('help', relay => {
+  relay.subscribe("subid", { limit: 2, kinds: [1], authors: [nick] })
+  console.log(`Helping ${subid} by sending em' to -> https://nostr.how/`);
+  window.location = "https://nostr.how/";
+})
+
 pool.on('eose', relay => {
   relay.close()
 });
