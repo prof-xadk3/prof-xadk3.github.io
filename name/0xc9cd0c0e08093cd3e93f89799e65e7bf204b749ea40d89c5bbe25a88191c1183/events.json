@@ -1,0 +1,26 @@
+{
+  "names": {
+    "vitamin": "b254f8795984721f3ded892a47b5760c11ab7ceacc51472790bd0e15135fa7a4""_": "176419bda44e93a6bd7aeab4ce9d3e27c7a9eb53cbbb60bb7d5c32239140be5c", // ⚡🤷😳
+    "__": "4be24fbdb5857a1ca5c59b14ee7e19b8d718fd21f19b17f8fd3261ca928f5e16", // # adding moar madness here.
+    "xadkekopc": "0a4bc33dbb4b63980b586b6d7e76f4d28cfaf2b7c39829df2da789aa2d71efb2",
+    "x": "20dd4114d2517afdface5a7bf516998d0709a4b1ab0b6777e21ee61f087aa7a0",
+    "nick": "7c2fa10b823308480cd5b04545dcf87d10cfa277afe1ede1c257bd03f1f9712a",
+    "prof_xadke": "0fa734d0fa0d29ce6a9f1f35e34decd8d68d1f726c8d5dbb63dfcb2d542fca39",
+    "wth": "npub1065a4z5d5kewg49e6fjxur5u04kh7tdnfqf6hnlfhsg8tkfw89ls3ak5p8", // check hehe.
+    "coin": "npub15mf4j4qu5z2g7mhyyan0cx40ra9stnkrp93s0we55f74tlv550nqxht82x",
+  }
+    "relays": {
+    "wss://threatmap.fortiguard.com/ws",
+    "wss://relay.damus.io",
+    "wss://nostr-pub.wellorder.net",
+    "wss://knostr.neutrine.com",
+    "wss://nostr.openchain.fr",
+    "wss://relay.current.fyi",
+    "wss://brb.io",
+    "wss://nos.lol",
+    "wss://nostr.bitcoiner.social",
+    "wss://eden.nostr.land",
+    "wss://nostr.orangepill.dev",
+    "wss://relay.nostrgraph.net"
+  }
+}
