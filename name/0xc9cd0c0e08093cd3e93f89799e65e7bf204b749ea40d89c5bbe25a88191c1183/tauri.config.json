@@ -2,7 +2,7 @@
   "build": {
     "beforeBuildCommand": "npm run build",
     "beforeDevCommand": "npm run dev",
-    "devPath": "./",
+    "devPath": "http://127.0.0.1:2580",
     "distDir": "./"
   },
   "package": {

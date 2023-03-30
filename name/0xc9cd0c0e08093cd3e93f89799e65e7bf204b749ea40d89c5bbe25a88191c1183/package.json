@@ -4,6 +4,7 @@
   "description": "nick.",
   "main": "main.js",
   "scripts": {
+    "host": "python3 -m http.server 2580",
     "relay": "node relay.js",
     "dev": "echo welcome .dev.",
     "run": "echo execute it urself.",
