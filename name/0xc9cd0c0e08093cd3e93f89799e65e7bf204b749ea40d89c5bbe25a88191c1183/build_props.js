@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const path = require('path');
 const fs = require('fs');
 const description = require('./description');
@@ -110,13 +112,13 @@ export const ${componentName}Props = () => {
       </thead>
       <tbody>
         ${items
-          .map(
-            (item) => `
+      .map(
+        (item) => `
           <tr>
             <td>
               <a href="#prop-${propName(item.name)}" id="prop-${propName(
-              item.name
-            )}"><span>${propName(item.name)}</span></a>
+          item.name
+        )}"><span>${propName(item.name)}</span></a>
             </td>
             <td>
               <span>${typeFormatted(type(item))}</span>
@@ -127,8 +129,8 @@ export const ${componentName}Props = () => {
             <td>${description(item)}</td>
           </tr>
         `
-          )
-          .join('')}
+      )
+      .join('')}
       </tbody>
     </table>
   )
@@ -150,19 +152,19 @@ const buildSlotsTable = (componentName, items) => {
         </thead>
         <tbody>
           ${items
-            .map(
-              (item) => `
+      .map(
+        (item) => `
             <tr>
               <td>
                 <a href="#slot-${slotName(item.name)}" id="slot-${slotName(
-                item.name
-              )}"><span>${slotName(item.name)}</span></a>
+          item.name
+        )}"><span>${slotName(item.name)}</span></a>
               </td>
               <td>${description(item)}</td>
             </tr>
           `
-            )
-            .join('')}
+      )
+      .join('')}
         </tbody>
       </table>
     )
