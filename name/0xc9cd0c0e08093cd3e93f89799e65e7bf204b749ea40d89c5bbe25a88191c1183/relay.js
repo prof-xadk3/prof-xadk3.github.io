@@ -2,6 +2,8 @@
 
 const { RelayPool } = require('nostr')
 
+console.log("[+] Starting relay.")
+
 const nick = "npub1pf9ux0dmfd3esz6cddkhuah562x04u4hcwvznhed57y65tt3a7eqx9mp64";
 const cg = "npub1fx6036g40wq40c2nqgrssa0xxx8jx4hawgks8uujwxhjaa9scwysshkwcg";
 const damus = "wss://relay.damus.io"
