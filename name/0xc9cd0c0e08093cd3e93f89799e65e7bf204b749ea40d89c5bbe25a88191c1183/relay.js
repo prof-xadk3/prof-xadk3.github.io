@@ -18,7 +18,7 @@ pool.on('open', relay => {
   relay.subscribe("subid", { limit: 2, kinds: [1], authors: [nick] });
   console.info(`[+] sab ko saab ${cg} mai jaancha la.`); // property ma properly flag na lagaune lai maile kei garna sakdaina.
   counter += 1;
-  console.log(`[+] ${counter} amount++ ? what!?`);
+  console.log(`[+] ${counter} amount++ ? what!? -> mints!`);
 });
 
 pool.on('eose', relay => {
