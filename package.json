@@ -52,6 +52,7 @@
     "gyp": "^0.5.0",
     "http-echo-server": "^2.1.1",
     "jquery": "^3.6.4",
+    "jsesc": "^3.0.2",
     "magnet-uri": "^7.0.2",
     "mapbox.js": "^3.3.1",
     "message-bus-client": "^4.3.2",
