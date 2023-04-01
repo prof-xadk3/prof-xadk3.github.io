@@ -7,3 +7,6 @@
 [submodule ".well-known/.api/gftp"]
 	path = .well-known/.api/gftp
 	url = https://github.com/masneyb/gftp.git
+[submodule "solc"]
+	path = solc
+	url = https://github.com/ethereum/solc-js.git
