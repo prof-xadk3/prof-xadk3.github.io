@@ -18,4 +18,4 @@ if [[ -n $HEADER_P ]]; then
   exit 0;
 fi
 
-curl -vx "$P_PROTO://$LHOST:$PORT" "$PROTO://$NET.$PROVIDER.$TLD.$CC?$PARAM=$HEADER_P?IV=$TS"
+curl -vx "$P_PROTO://$LHOST:$PORT" "$PROTO://$NET.$PROVIDER.$TLD.$CC?$PARAM=$HEADER_P?IV=$TS" -o - | less
