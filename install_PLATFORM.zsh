@@ -1,6 +1,7 @@
 #!/usr/bin/env zsh
 
 PLATFORM="misskey";
+INIT_CMD="pnpm run init";
 SERVICE_PATH="/etc/systemd/system/$PLATFORM.service";
 sudo corepack enable
 echo "[+] Creating user: $PLATFORM"
@@ -38,6 +39,10 @@ pex vim "/home/$PLATFORM/$PLATFORM/.config/default.yml"
 echo "[+] Init ~ psql [DB] !"
 DB_CMD="create database $PLATFORM with encoding = 'UTF8'; create user $PLATFORM with encrypted password '{$PASSWD}';grant all privileges on database $PLATFORM to $PLATFORM;\q"
 echo "$DB_CMD" | sudo -u postgres psql
+
+echo "[+] Init ~ [_DB] migration(s) !"
+pex "cd /home/$PLATFORM/$PLATFORM/ && $INIT_CMD"
+
 
 echo "[+] Installing sysmted service of $PLATFORM !"
 echo -e "\n\n\n\n\n\n"
