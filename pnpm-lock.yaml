@@ -127,6 +127,9 @@ dependencies:
   message-bus-client:
     specifier: ^4.3.2
     version: 4.3.2
+  mfm-js:
+    specifier: ^0.23.3
+    version: 0.23.3
   noble:
     specifier: ^0.0.2
     version: 0.0.2
@@ -8871,6 +8874,12 @@ packages:
       - utf-8-validate
     dev: false
 
+  /mfm-js@0.23.3:
+    resolution: {integrity: sha512-o8scYmbey6rMUmWAlT3k3ntt6khaCLdxlmHhAWV5wTTMj2OK1atQvZfRUq0SIVm1Jig08qlZg/ps71xUqrScNA==}
+    dependencies:
+      twemoji-parser: 14.0.0
+    dev: false
+
   /micromatch@2.3.11:
     resolution: {integrity: sha512-LnU2XFEk9xxSJ6rfgAry/ty5qwUTyHYOBU0g4R6tIw5ljwgGIBmiKhRWLw5NpMOnrgUNcDJ4WMp8rl3sYVHLNA==}
     engines: {node: '>=0.10.0'}
@@ -11958,6 +11967,10 @@ packages:
 
   /tweetnacl@1.0.3:
     resolution: {integrity: sha512-6rt+RN7aOi1nGMyC4Xa5DdYiukl2UWCbcJft7YhxReBGQD7OAM8Pbxw6YMo4r2diNEA8FEmu32YOn9rhaiE5yw==}
+    dev: false
+
+  /twemoji-parser@14.0.0:
+    resolution: {integrity: sha512-9DUOTGLOWs0pFWnh1p6NF+C3CkQ96PWmEFwhOVmT3WbecRC+68AIqpsnJXygfkFcp4aXbOp8Dwbhh/HQgvoRxA==}
     dev: false
 
   /typanion@3.12.1:
