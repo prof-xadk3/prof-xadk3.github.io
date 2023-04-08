@@ -30,3 +30,9 @@ pool.on('event', (relay, sub_id, ev) => {
   console.log(relay);
   console.log(ev)
 });
+
+pool.on('d', (relay, pubkey, i) => {
+  console.log(pubkey);
+  console.log(relay);
+  console.log(i)
+});
