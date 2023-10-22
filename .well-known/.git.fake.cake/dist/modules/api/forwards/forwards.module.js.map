@@ -1,1 +1,0 @@
-{"version":3,"file":"forwards.module.js","sourceRoot":"","sources":["../../../../src/server/modules/api/forwards/forwards.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAwC;AACxC,wDAAoD;AACpD,2DAAuD;AAMhD,IAAM,cAAc,GAApB,MAAM,cAAc;CAAG,CAAA;AAAjB,cAAc;IAJ1B,IAAA,eAAM,EAAC;QACN,OAAO,EAAE,CAAC,wBAAU,CAAC;QACrB,SAAS,EAAE,CAAC,oCAAgB,CAAC;KAC9B,CAAC;GACW,cAAc,CAAG;AAAjB,wCAAc"}

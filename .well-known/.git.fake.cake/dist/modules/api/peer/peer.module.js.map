@@ -1,1 +1,0 @@
-{"version":3,"file":"peer.module.js","sourceRoot":"","sources":["../../../../src/server/modules/api/peer/peer.module.ts"],"names":[],"mappings":";;;;;;;;;AAAA,2CAAwC;AACxC,wDAAoD;AACpD,mDAA+C;AAMxC,IAAM,UAAU,GAAhB,MAAM,UAAU;CAAG,CAAA;AAAb,UAAU;IAJtB,IAAA,eAAM,EAAC;QACN,OAAO,EAAE,CAAC,wBAAU,CAAC;QACrB,SAAS,EAAE,CAAC,4BAAY,CAAC;KAC1B,CAAC;GACW,UAAU,CAAG;AAAb,gCAAU"}

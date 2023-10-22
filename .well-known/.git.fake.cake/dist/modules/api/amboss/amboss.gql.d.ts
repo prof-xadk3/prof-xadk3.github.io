@@ -1,9 +1,0 @@
-export declare const getUserQuery: import("graphql").DocumentNode;
-export declare const getLoginTokenQuery: import("graphql").DocumentNode;
-export declare const getSignInfoQuery: import("graphql").DocumentNode;
-export declare const loginMutation: import("graphql").DocumentNode;
-export declare const getLightningAddresses: import("graphql").DocumentNode;
-export declare const getNodeSocialInfo: import("graphql").DocumentNode;
-export declare const saveBackupMutation: import("graphql").DocumentNode;
-export declare const pingHealthCheckMutation: import("graphql").DocumentNode;
-export declare const pushNodeBalancesMutation: import("graphql").DocumentNode;

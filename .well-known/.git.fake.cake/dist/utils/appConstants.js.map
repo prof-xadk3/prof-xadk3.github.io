@@ -1,1 +1,0 @@
-{"version":3,"file":"appConstants.js","sourceRoot":"","sources":["../../src/server/utils/appConstants.ts"],"names":[],"mappings":";;;AAAa,QAAA,YAAY,GAAG;IAC1B,UAAU,EAAE,WAAW;IACvB,aAAa,EAAE,gBAAgB;IAC/B,eAAe,EAAE,YAAY;IAC7B,gBAAgB,EAAE,aAAa;CAChC,CAAC"}
